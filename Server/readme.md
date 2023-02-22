@@ -1,10 +1,12 @@
 <!-- GETTING DATA -->
 
-/api/products => GIVES ALL DATA
-/api/products?category=gaming => GIVES DATA WITH CATEGORY GAMING
-/api/products?category=gaming&brand=Sony => GIVES DATA WITH CATEGORY GAMING AND BRAND SONY
+<p>/api/products => GIVES ALL DATA</p>
+<p>/api/products?category=gaming => GIVES DATA WITH CATEGORY GAMING</p>
+<p>/api/products?category=gaming&brand=Sony => GIVES DATA WITH CATEGORY GAMING AND BRAND SONY</p>
+
+
 
 <!-- LOGIN AND REGISTER -->
 
-/api/users/register => FOR REGISTERING NEW USER
-/api/users/login => FOR USER LOGIN
+<p>/api/users/register => FOR REGISTERING NEW USER></p>
+<p>/api/users/login => FOR USER LOGIN</p>
