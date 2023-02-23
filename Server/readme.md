@@ -11,4 +11,11 @@
 <p>/api/users/register => FOR REGISTERING NEW USER></p>
 <p>/api/users/login => FOR USER LOGIN</p>
 
+<h2>CATEGORY</h2>
+<p>photography</p>
+<p>computer</p>
+<p>gaming</p>
+<p>drone</p>
+<p>video</p>
+
 <h1>https://taupe-raven-gear.cyclic.app</h1>
