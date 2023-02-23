@@ -102,12 +102,13 @@ export default function Navbar() {
               ElectroGlad
             </Box>
           </HStack>
-          <Flex alignItems={"center"} width={["40%", "40%", "50%", "50%"]}>
-            <InputGroup mt={2} mr="15px" display={["none", "none", "block"]}>
+          <Flex alignItems={"center"} width={["40%", "40%", "50%", "50%"]} justifyContent="space-evenly">
+            <InputGroup mt={2} display={["none", "none", "block"]} marginRight="40px">
               <Input
                 placeholder="Search"
                 borderRadius="20px"
                 variant={"none"}
+                height="35px"
               />
               <InputRightElement
                 children={<Search2Icon size={"18px"} color={"gray"} />}
@@ -117,7 +118,7 @@ export default function Navbar() {
               <Flex
                 variant={"Avatar"}
                 cursor={"pointer"}
-                minW={"200px"}
+                
                 alignItems="center"
                 textAlign={"center"}
               >
