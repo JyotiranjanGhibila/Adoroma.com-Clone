@@ -1,17 +1,20 @@
-import Navbar from "./Components/Navbar/Navbar"
-import './App.css';
-import Home from "./Pages/Home/Home";
 
 
 
-
+import Navbar from "./Components/Navbar";
+import "./App.css";
+import Camera from "./Components/Products/Camera";
+import AddToCartButton from "./Components/cartComponents/AddtoCartModal";
+import AllComponents from "./Components/AllComponents"
 function App() {
   return (
     <div className="App">
-     <Navbar/> 
-    <Home/>
-    </div>
+      <AddToCartButton />
+       <Navbar/> 
+     <AllComponents/>
+      </div>
+
   );
 }
 
-export default App;
+export default App
