@@ -1,6 +1,7 @@
 <!-- GETTING DATA -->
 
 <p>/api/products => GIVES ALL DATA</p>
+<p>/api/products/:id => GIVES SINGLE PRODUCT DETAIL</p>
 <p>/api/products?category=gaming => GIVES DATA WITH CATEGORY GAMING</p>
 <p>/api/products?category=gaming&brand=Sony => GIVES DATA WITH CATEGORY GAMING AND BRAND SONY</p>
 
