@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import { BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
 import { FiShoppingCart } from "react-icons/fi";
-
+import AddtoCartModal from "../cartComponents/AddtoCartModal"
 
 const data = [
   {
@@ -239,7 +239,7 @@ const ContinuousLighting = () => {
                 
                   <Flex justifyContent="center" alignContent="center" display={"none"} _hover={{display:"block"}}>
                     <Box fontSize="md">
-                      <Button>Add to cart</Button>
+                      <AddtoCartModal/>
                     </Box>
                   </Flex>
                 
