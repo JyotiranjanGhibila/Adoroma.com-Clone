@@ -1,3 +1,6 @@
+
+
+
 import Navbar from "./Components/Navbar";
 import "./App.css";
 import Camera from "./Components/Products/Camera";
@@ -10,6 +13,7 @@ function App() {
        <Navbar/> 
      <AllComponents/>
       </div>
+
   );
 }
 
