@@ -19,6 +19,7 @@ const Dropdown = () => {
         pl={[0, 0, 0, 4, 4]}
         pr={[0, 0, 0, 4, 4]}
         fontSize={["13px", "13px", "13px", "16px"]}
+       
       >
         <Flex width="400px" justify={"space-between"}>
           <Flex alignItems="center">
@@ -36,7 +37,7 @@ const Dropdown = () => {
                       pl={10}
                       pt={4}
                     >
-                      <Box>
+                      <Box >
                         <Text fontWeight={"semibold"} fontSize={"16px"}>
                           Camera
                         </Text>
@@ -380,8 +381,8 @@ const Dropdown = () => {
             <BiChevronDown />
           </Flex>
         </Flex>
-        <Flex fontSize={"sm"}  justify="space-evenly" width={"60%"}>
-          <a href="#jhbfv" >Deals of the day</a>
+        <Flex fontSize={"sm"} justify="space-evenly" width={"60%"}>
+          <a href="#jhbfv">Deals of the day</a>
           <a href="#jhbfv">ElectroGlad Credit Card</a>
           <a href="#jhbfv">VIP REwards</a>
           <a href="#jhbfv">Gift Cards</a>
