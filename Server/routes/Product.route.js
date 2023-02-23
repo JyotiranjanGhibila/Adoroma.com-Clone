@@ -3,6 +3,7 @@ const { ProductModel } = require("../models/Product.model");
 
 const ProductRouter = express.Router();
 
+// GET ALL PRODUCTS
 ProductRouter.get("/", async (req, res) => {
   try {
     // FILTER
@@ -19,6 +20,17 @@ ProductRouter.get("/", async (req, res) => {
     });
   } catch (error) {
     res.send({ error: error });
+  }
+});
+
+// GET SINGLE PRODUCT
+ProductRouter.get("/:id", async (req, res) => {
+  try {
+    const data = await ProductModel.findById({ _id: ID });
+    res.send(data);
+  } catch (error) {
+    console.log(error);
+    res.status(400).send({ message: "Something went wrong", error });
   }
 });
 
