@@ -2,23 +2,33 @@ import React,{useState} from 'react';
 import './Styles/Signup.css';
 import { Link,useNavigate } from 'react-router-dom';
 function Signup() {
-  const [firtsname, setFirtsname] = useState("");
+  const [firstname, setFirtsname] = useState("");
   const [lastname, setLastname] = useState("");
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmpassword, setConfirmpassword] = useState("");
 
-const Navigate=useNavigate();
-  const handleSignUp = () => {
-    const signupData = {
-    firtsname:firtsname,
-    lastname:lastname,
+const navigate=useNavigate();
+  const handleSignUp = (e) => {
+    e.preventDefault();
+    
+    let signupData = {
+    first_name:firstname,
+    last_name:lastname,
     email:email,
     password:password
     };
+    if (password !== confirmpassword) {
+      alert("Passwords do not match");
+      return;
+    }
+    if(firstname===""||lastname===""||password===""||confirmpassword===""||email===""){
+      alert("Please enter all fields.")
+    }
+    try{
 
-    fetch("url/users/register", {
+    fetch("https://taupe-raven-gear.cyclic.app/api/users/register", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
@@ -28,9 +38,13 @@ const Navigate=useNavigate();
       .then((res) => res.json())
       .then((res) => {
         console.log(res);
-        Navigate("/login")
+        navigate("/login")
       })
       .catch((err) => console.log(err));
+    }
+    catch(err){
+      console.log(err);
+    }
   };
   return (
     <div className="signup-container">
@@ -47,7 +61,7 @@ const Navigate=useNavigate();
             <div className='firstlast'>
               <div className='first'>
             <label htmlFor="firstName">First Name</label>
-            <input type="text" id="firstName" value={firtsname} onChange={(e)=>{setFirtsname(e.target.value)}} name="firstName" placeholder='First Name' required />
+            <input type="text" id="firstName" value={firstname} onChange={(e)=>{setFirtsname(e.target.value)}} name="firstName" placeholder='First Name' required />
 
             </div>
             <div className='last'>

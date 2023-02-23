@@ -4,7 +4,7 @@ import { Link,useNavigate } from 'react-router-dom';
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const Navigate=useNavigate();
+  const navigate=useNavigate();
 
  
 
@@ -14,7 +14,12 @@ function Login() {
       email: email,
       password: password,
     };
-    fetch('url/users/login', {
+    if(email===""||password===""){
+      alert("Please enter all fields.")
+      return;
+    }
+  
+    fetch('https://taupe-raven-gear.cyclic.app/api/users/login', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json',
@@ -23,12 +28,26 @@ function Login() {
     })
       .then((res) => res.json())
       .then((res) => {
-        console.log(res);
-        localStorage.setItem('token', res.token);
-        Navigate("/")
+        console.log(res.token);
+          localStorage.setItem('Token', res.token);
+          if (email === 'adminglad@gmail.com' && password === 'adminglad2023') {
+            navigate('/admin'); // Redirect to admin panel
+          } else {
+            alert("Login Successful");
+            navigate("/");
+          }
+        
       })
-      .catch((err) => console.log(err));
-    };
+      .catch((err) => {
+        if (err.response && err.response.status === 404) {
+          alert('Email not found.');
+          navigate('/signup');
+        } else {
+          console.log(err);
+        }
+      });
+  };
+  
   return (
     <div className="login-container">
       <div className="left-container">
