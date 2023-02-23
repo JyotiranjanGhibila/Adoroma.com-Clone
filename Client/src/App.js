@@ -1,12 +1,11 @@
-import Navbar from "./Components/Navbar"
-import './App.css';
-import Camera from './Components/Products/Camera';
 import AllComponents from "./Components/AllComponents";
+import Gaming from "./Components/Products/Gaming";
 
 function App() {
   return (
     <div className="Appf">
-      <AllComponents/>
+      <AllComponents />
+      {/* <Gaming/> */}
     </div>
   );
 }
