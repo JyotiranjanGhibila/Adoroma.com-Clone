@@ -1,4 +1,4 @@
-import { Heading, Img } from "@chakra-ui/react";
+import { Button, Heading, Img, Show } from "@chakra-ui/react";
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
@@ -150,13 +150,13 @@ const responsiveSettings = [
  
   
 ];
-const MoonLightCards = () => {
+const ContinuousLighting = () => {
   
   return (
     <div style={{ padding: "10px", marginTop: "30px" }}>
-      <Flex textAlign={"left"} alignItems="baseline">
-        <Heading textAlign={"left"} fontWeight="normal" padding={"10px"}>
-          Mobile Accessories
+      <Flex textAlign={"left"} alignItems="baseline" padding="10px">
+        <Heading textAlign={"left"} fontWeight="normal">
+          Continuous Lighting
         </Heading>
         {}
         <span>Special offers</span>
@@ -232,10 +232,17 @@ const MoonLightCards = () => {
                 <Flex justifyContent="center" alignContent="center">
                   <Box fontSize="md">
                     <Box as="span" color={"blue.500"} fontSize="smaller">
-                     Get Reward points
+                      Get Reward points
                     </Box>
                   </Box>
                 </Flex>
+                
+                  <Flex justifyContent="center" alignContent="center" display={"none"} _hover={{display:"block"}}>
+                    <Box fontSize="md">
+                      <Button>Add to cart</Button>
+                    </Box>
+                  </Flex>
+                
               </Box>
             </Box>
           </Flex>
@@ -245,4 +252,4 @@ const MoonLightCards = () => {
   );
 };
 
-export default MoonLightCards
+export default ContinuousLighting;
