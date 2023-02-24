@@ -6,13 +6,12 @@ import "./App.css";
 
 import Camera from "./Components/Products/Camera";
 import AddToCartButton from "./Components/cartComponents/AddtoCartModal";
+import Photography from "./Components/Products/Photography";
 
 function App() {
   return (
     <div className="App">
-      <AddToCartButton />
-      <Navbar />
-      <AllComponents />
+     <AllComponents/>
     </div>
   )
 
