@@ -6,6 +6,11 @@ import "./App.css";
 
 import Camera from "./Components/Products/Camera";
 import AddToCartButton from "./Components/cartComponents/AddtoCartModal";
+
+import AllComponents from "./Components/AllComponents";
+
+
+
 import Photography from "./Components/Products/Photography";
 
 function App() {
@@ -17,4 +22,5 @@ function App() {
 
   }
 
-export default App
+
+export default App;
