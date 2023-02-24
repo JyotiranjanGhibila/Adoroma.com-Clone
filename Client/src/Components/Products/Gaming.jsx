@@ -1,7 +1,6 @@
 import {
   Stack,
   Flex,
-  Button,
   Text,
   VStack,
   useBreakpointValue,
@@ -10,6 +9,7 @@ import {
   Center,
   Wrap,
   Heading,
+  Skeleton,
 } from "@chakra-ui/react";
 import ReactStars from "react-stars";
 import { Link } from "react-router-dom";
@@ -21,7 +21,7 @@ const Gaming = () => {
     <>
       <Flex
         w={"full"}
-        h={"19vh"}
+        h={{ base: "5vh", md: "9vh", lg: "17vh" }}
         backgroundImage={
           "url(https://www.adorama.com/col/_gaming/Gaming_Header_Background_Desktop.jpg)"
         }
@@ -38,7 +38,7 @@ const Gaming = () => {
             <Box display={"flex"}>
               <Image
                 src="https://www.adorama.com/col/_gaming/h1-controller.svg"
-                w={{ lg: "23%" }}
+                w={{ base: "15%", md: "20%", lg: "23%" }}
                 mr={{ lg: "6" }}
               ></Image>
               <Text
@@ -46,7 +46,7 @@ const Gaming = () => {
                 fontWeight={600}
                 lineHeight={1.2}
                 letterSpacing={7}
-                fontSize={"80px"}
+                fontSize={{ base: "30", md: "50", lg: "80" }}
               >
                 GAMING
               </Text>
@@ -142,7 +142,6 @@ const Gaming = () => {
             fontWeight={"450"}
             color={"black.700"}
             textAlign={"center"}
-            ml={{ base: "107", md: "107", lg: "107" }}
           >
             BestSeller
           </Text>
@@ -154,7 +153,7 @@ const Gaming = () => {
               display={"grid"}
               gridTemplateColumns={{
                 base: "repeat(2,1fr)",
-                md: "repeat(4,1fr)",
+                md: "repeat(3,1fr)",
                 lg: "repeat(6,1fr)",
               }}
               gap={"15px"}
@@ -219,7 +218,6 @@ const Gaming = () => {
             src="https://www.adorama.com/col/_gaming/featured-games-controller.svg"
             w={{ lg: "5%" }}
             mr={{ lg: "6" }}
-            ml={{ base: "90", md: "90", lg: "100" }}
           ></Image>
           <Text
             color={"black"}
@@ -248,7 +246,6 @@ const Gaming = () => {
           fontWeight={"450"}
           color={"black.700"}
           textAlign={"center"}
-          ml={{ base: "107", md: "107", lg: "107" }}
         >
           TRENDING NOW
         </Text>
@@ -282,6 +279,13 @@ const Gaming = () => {
                   </Link>
                 </Box>
               ))}
+          </Box>
+        </Wrap>
+      </Center>
+      <Center py={12} backgroundColor={"rgb(245,245,245)"}>
+        <Wrap spacing={"80px"} width={"90%"} justify="center">
+          <Box w={{ base: "75%", md: "85%", lg: "97%" }} m={"auto"}>
+            <Image src="https://www.adorama.com/images/cms/33095Gaming_Page_-_Aug_22_-Spotlight-Large-Desktop_99465.jpg"></Image>
           </Box>
         </Wrap>
       </Center>

@@ -3,7 +3,6 @@ import Tred from "./tredingData";
 import cate from "./categoryData";
 import ReactStars from "react-stars";
 
-import styled from "styled-components";
 import Slider from "./Slider";
 import { Link } from "react-router-dom";
 
@@ -11,7 +10,7 @@ const Category = () => {
   return (
     <>
       <Box textAlign={"center"} backgroundColor={"rgb(245,245,245)"}>
-        <Heading fontSize={{ base: "3xl", md: "2xl", lg: "3xl" }}>
+        <Heading fontSize={{ base: "2xl", md: "2xl", lg: "3xl" }}>
           <Text
             as={"span"}
             position={"relative"}
@@ -40,15 +39,16 @@ const Category = () => {
             display={"grid"}
             gridTemplateColumns={{
               base: "repeat(2,1fr)",
-              md: "repeat(4,1fr)",
+              md: "repeat(3,1fr)",
               lg: "repeat(6,1fr)",
             }}
             gap={"15px"}
             m={"auto"}
+            
           >
             {cate.length > 0 &&
               cate.map((e, i) => (
-                <Box key={i}>
+                <Box key={i} >
                   <Box
                     m="auto"
                     w={{ base: "", md: "", lg: "75%" }}
@@ -103,7 +103,7 @@ const Category = () => {
               display={"grid"}
               gridTemplateColumns={{
                 base: "repeat(2,1fr)",
-                md: "repeat(4,1fr)",
+                md: "repeat(3,1fr)",
                 lg: "repeat(6,1fr)",
               }}
               gap={"15px"}
