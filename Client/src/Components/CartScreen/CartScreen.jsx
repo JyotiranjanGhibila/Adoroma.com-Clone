@@ -59,18 +59,6 @@ const CartScreen = () => {
               alt=""
             />
           </button>
-          <button style={{ height: "60px", backgroundColor: "yellow" }}>
-            <img
-              style={{
-                margin: "auto",
-                height: "70px",
-                marginTop: "-14px",
-              }}
-              src="https://pngimg.com/uploads/paypal/paypal_PNG9.png"
-              alt=""
-            />
-          </button>
-       
         </div>
         <div style={{ display: "flex", width: "100%" }}>
           <div style={{ width: "30%" }}>
