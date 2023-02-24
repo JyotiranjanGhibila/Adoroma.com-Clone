@@ -14,7 +14,7 @@ import {
   Tooltip,
 } from "@chakra-ui/react";
 import { BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
-import { FiShoppingCart } from "react-icons/fi";
+import AddtoCartModal from "../cartComponents/AddtoCartModal"
 
 
 const data = [
@@ -168,9 +168,15 @@ const MoonLightCards = () => {
         responsive={responsiveSettings}
       >
         {data.map((el) => (
-          <Flex p={2} w="full" alignItems="center" justifyContent="center">
+          <Flex
+            p={2}
+            w="full"
+            alignItems="center"
+            justifyContent="center"
+            className="myDiv"
+          >
             <Box
-              maxW="sm"
+              maxW="md"
               borderWidth="1px"
               rounded="lg"
               shadow="lg"
@@ -229,13 +235,20 @@ const MoonLightCards = () => {
                     </Box>
                   </Box>
                 </Flex>
-                <Flex justifyContent="center" alignContent="center">
+                <Flex
+                  justifyContent="center"
+                  alignContent="center"
+                  margin="4px"
+                >
                   <Box fontSize="md">
                     <Box as="span" color={"blue.500"} fontSize="smaller">
-                     Get Reward points
+                      Get Reward points
                     </Box>
                   </Box>
                 </Flex>
+                <Box className="hide">
+                  <AddtoCartModal />
+                </Box>
               </Box>
             </Box>
           </Flex>

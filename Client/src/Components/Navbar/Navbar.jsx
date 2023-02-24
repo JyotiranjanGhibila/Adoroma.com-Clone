@@ -30,11 +30,16 @@ import {
 } from "@chakra-ui/icons";
 import { BsCart, BsPerson } from "react-icons/bs";
 
-import { AiFillGift, AiFillLike, AiOutlineLike, AiOutlineTrademarkCircle } from "react-icons/ai";
+import {
+  AiFillGift,
+  AiFillLike,
+  AiOutlineLike,
+  AiOutlineTrademarkCircle,
+} from "react-icons/ai";
 import Dropdown from "../NavComponents/Dropdown";
 import NavDrawer from "../NavComponents/Drawer";
 import { FcLike } from "react-icons/fc";
-import { FaRegAddressCard} from "react-icons/fa";
+import { FaRegAddressCard } from "react-icons/fa";
 import { BiShoppingBag } from "react-icons/bi";
 
 const Links = ["Dashboard", "Projects", "Team"];
@@ -65,7 +70,7 @@ export default function Navbar() {
         color="white"
         padding={"5px"}
         fontSize="sm"
-        display={["none", "none", "none", "block"]}
+        display={["none", "none", "none", "flex"]}
       >
         <Text textColor={"orange"} fontWeight="bold" marginRight={"5px"}>
           CALL & SAVE.
@@ -90,7 +95,7 @@ export default function Navbar() {
         style={{ boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px" }}
       >
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-          <HStack spacing={1} alignItems={"left"}>
+          <HStack spacing={1} alignItems={"left"} marginLeft="-15px">
             <Grid
               display={["flex", "flex", "flex", "none"]}
               alignItems="center"
@@ -102,8 +107,16 @@ export default function Navbar() {
               ElectroGlad
             </Box>
           </HStack>
-          <Flex alignItems={"center"} width={["40%", "40%", "50%", "50%"]} justifyContent="space-evenly">
-            <InputGroup mt={2} display={["none", "none", "block"]} marginRight="40px">
+          <Flex
+            alignItems={"center"}
+            width={["40%", "40%", "50%", "50%"]}
+            justifyContent="space-evenly"
+          >
+            <InputGroup
+              mt={2}
+              display={["none", "none", "block"]}
+              marginRight="40px"
+            >
               <Input
                 placeholder="Search"
                 borderRadius="20px"
@@ -118,7 +131,6 @@ export default function Navbar() {
               <Flex
                 variant={"Avatar"}
                 cursor={"pointer"}
-                
                 alignItems="center"
                 textAlign={"center"}
               >
@@ -128,8 +140,9 @@ export default function Navbar() {
                   textAlign="center"
                   w={"fit-content"}
                   display={["none", "block", "block", "block"]}
+                  padding="10px"
                 >
-                  <p> Hi,name</p>
+                  <p style={{ marginRight: "60px" }}> Hi,Braj</p>
                   <Menu>
                     <MenuButton
                       as={Button}
@@ -183,6 +196,28 @@ export default function Navbar() {
       <Box display={["none", "none", "none", "block"]}>
         <Dropdown />
       </Box>
+      <Flex
+        alignItems={"center"}
+        background="#002f6c"
+        justifyContent="space-evenly"
+        height={"50px"}
+        display={["block", "block", "none", "none"]}
+      >
+        <InputGroup w={"80%"} margin="auto">
+          <Input
+            placeholder="Search"
+            borderRadius="20px"
+            variant={"none"}
+            height="35px"
+            marginTop={2}
+          />
+          <InputRightElement
+            children={
+              <Search2Icon size={"18px"} color={"gray"} marginTop={2} />
+            }
+          />
+        </InputGroup>
+      </Flex>
     </>
   );
 }

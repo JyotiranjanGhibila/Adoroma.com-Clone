@@ -22,3 +22,10 @@ code {
   font-weight:500;
   color: darkblue;
 }
+.hide{
+  display: none;
+}
+.myDiv:hover .hide {
+  display: block;
+  color: red;
+}
