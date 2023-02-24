@@ -20,8 +20,12 @@ ProductRouter.get("/", async (req, res) => {
     if (brand) filters.push({ brand: brand });
     if (category) filters.push({ category: category });
 
+    const sortBy = {};
+    if (req.query.price) sortBy["price"] = req.query.price;
+    if (req.query.rating) sortBy["rating"] = req.query.rating;
+
     const products = await ProductModel.find({ $and: filters })
-      .sort()
+      .sort(sortBy)
       .skip(page * limit)
       .limit(limit);
 
@@ -51,13 +55,18 @@ ProductRouter.get("/search", async (req, res) => {
         ],
       },
     ];
+
     if (min) filters.push({ price: { $gte: min } });
     if (max) filters.push({ price: { $lte: max } });
     if (brand) filters.push({ brand: brand });
     if (category) filters.push({ category: category });
 
+    const sortBy = {};
+    if (req.query.price) sortBy["price"] = req.query.price;
+    if (req.query.rating) sortBy["rating"] = req.query.rating;
+
     const products = await ProductModel.find({ $and: filters })
-      .sort()
+      .sort(sortBy)
       .skip(page * limit)
       .limit(limit);
 
