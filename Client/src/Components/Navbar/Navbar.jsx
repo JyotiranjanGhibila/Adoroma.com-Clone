@@ -103,7 +103,7 @@ export default function Navbar() {
               <NavDrawer />
             </Grid>
 
-            <Box fontSize={["xl", "2xl", "4xl", "4xl"]} fontFamily="cursive">
+            <Box fontSize={["xl", "2xl", "4xl", "4xl"]} fontFamily="red serifs">
               ElectroGlad
             </Box>
           </HStack>
@@ -122,6 +122,7 @@ export default function Navbar() {
                 borderRadius="20px"
                 variant={"none"}
                 height="35px"
+                color="black"
               />
               <InputRightElement
                 children={<Search2Icon size={"18px"} color={"gray"} />}

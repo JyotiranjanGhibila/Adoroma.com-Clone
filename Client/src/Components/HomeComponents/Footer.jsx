@@ -16,10 +16,21 @@ import {
   Show,
   InputLeftAddon,
   InputRightAddon,
+  Flex,
+  Heading,
 } from "@chakra-ui/react";
 import React, { ReactNode } from "react";
-import { FaFacebook, FaInstagram, FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa";
-import { BiMailSend } from "react-icons/bi";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTiktok,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
+
+import { BsChat,  BsTelephone } from "react-icons/bs";
+import { RiCustomerService2Line } from "react-icons/ri";
+import { GrLocation } from "react-icons/gr";
 
 const Logo = (props: any) => {
   return (
@@ -74,10 +85,10 @@ const SocialButton = ({
 };
 
 const ListHeader = ({ children }: { children: ReactNode }) => {
-    const [show, setShow] = React.useState(false);
-    const handleClick = () => setShow(!show);
+  const [show, setShow] = React.useState(false);
+  const handleClick = () => setShow(!show);
   return (
-    <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
+    <Text fontWeight={"600"} fontSize={"lg"} mb={2}>
       {children}
     </Text>
   );
@@ -85,162 +96,247 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
 
 export default function Footer() {
   return (
-    <Box bg={"#002f6c"} color="white">
-      <Container as={Stack} maxW={"6xl"} py={10}>
-        <SimpleGrid
-          templateColumns={{ sm: "1fr", md: "1fr 1fr ", lg: "1fr 1fr 1fr 1fr" }}
-          spacing={8}
-          textAlign="center"
-        >
-          <Stack
-            align={{ base: "center", md: "flex-start", lg: "flex-start" }}
-            textAlign="start"
+    <>
+      <Flex justifyContent={"space-evenly"}  bg="gray.200" height={"300px"}>
+        <Stack width="260px">
+          <Box
+            border={"1px solid silver"}
+            padding="25px"
+            borderRadius={"50%"}
+            margin="auto"
           >
-            <ListHeader>How Can We Help?</ListHeader>
-            <Link href={"#"} color="gray.400">
-              Customer Service
-            </Link>
-            <Link href={"#"} color="gray.400">
-              Track Your Order
-            </Link>
-            <Link href={"#"} color="gray.400">
-              Shipping & Delivery
-            </Link>
-            <Link href={"#"} color="gray.400">
-              In-Store Pickup
-            </Link>
-            <Link href={"#"} color="gray.400">
-              International Orders
-            </Link>
-            <Link href={"#"} color="gray.400">
-              Return Policy
-            </Link>
-            <Link href={"#"} color="gray.400">
-              Contact Us
-            </Link>
-            <Link href={"#"} color="gray.400">
-              Warranties
-            </Link>
-            <Link href={"#"} color="gray.400">
-              Accessibility Policy
-            </Link>
-          </Stack>
-
-          <Stack
-            align={{ base: "center", md: "flex-start", lg: "flex-start" }}
-            textAlign="start"
+            <BsTelephone size={"40px"} />
+          </Box>
+          <Text fontSize={"2xl"} fontWeight="bold">
+            Give us a call
+          </Text>
+          <Text>Questions? We're happy to help! Call us at 800-223-2500</Text>
+        </Stack>
+        <Stack width="260px">
+          <Box
+            border={"1px solid silver"}
+            padding="25px"
+            borderRadius={"50%"}
+            margin="auto"
           >
-            <ListHeader>Services & Programs</ListHeader>
-            <Link href={"#"} color="gray.400">
-              ElectroGlad Business Education & Government
-            </Link>
-            <Link href={"#"} color="gray.400">
-              ElectroGlad Edge Credit Card
-            </Link>
-            <Link href={"#"} color="gray.400">
-              VIP Rewards
-            </Link>
-            <Link href={"#"} color="gray.400">
-              Students
-            </Link>
-
-            <Link href={"#"} color="gray.400">
-              ElectroGlad Protect
-            </Link>
-            <Link href={"#"} color="gray.400">
-              Photo Printing
-            </Link>
-            <Link href={"#"} color="gray.400">
-              Camera Rentals
-            </Link>
-            <Link href={"#"} color="gray.400">
-              Sell Used Equipment
-            </Link>
-            <Link href={"#"} color="gray.400">
-              {" "}
-              Authorized Apple Service
-            </Link>
-          </Stack>
-          <Stack
-            align={{ base: "center", md: "flex-start", lg: "flex-start" }}
-            textAlign="start"
+            <BsChat size={"40px"} />
+          </Box>
+          <Text fontSize={"2xl"} fontWeight="bold">
+            Chat Now
+          </Text>
+          <Text>Need help or have product questions? Chat with an expert.</Text>
+        </Stack>
+        <Stack width="260px">
+          <Box
+            border={"1px solid silver"}
+            padding="25px"
+            borderRadius={"50%"}
+            margin="auto"
           >
-            <ListHeader> Who We Are</ListHeader>
-            <Link href={"#"} color="gray.400">
-              About ElectroGlad
-            </Link>
-            <Link href={"#"} color="gray.400">
-              Our History
-            </Link>
-            <Link href={"#"} color="gray.400">
-              Creator Highlights
-            </Link>
-            <Link href={"#"} color="gray.400">
-              ElectroGlad Reviews
-            </Link>
-            <Link href={"#"} color="gray.400">
-              Map & Directions
-            </Link>
-            <Link href={"#"} color="gray.400">
-              Events
-            </Link>
-            <Link href={"#"} color="gray.400">
-              {" "}
-              Learning Center
-            </Link>
-            <Link href={"#"} color="gray.400">
-              Brands
-            </Link>
-            <Link href={"#"} color="gray.400">
-              {" "}
-              Affiliate Program Careers
-            </Link>
-          </Stack>
-          <Stack
-            width="140%"
-            align={{ base: "center", md: "flex-start", lg: "flex-start" }}
+            <RiCustomerService2Line size={"40px"} />
+          </Box>
+          <Text fontSize={"2xl"} fontWeight="bold">
+            Help Center
+          </Text>
+          <Text>
+            For info on shipping, returns, orders and more, find answers here.
+          </Text>
+        </Stack>
+        <Stack width="260px">
+          <Box
+            border={"1px solid silver"}
+            padding="25px"
+            borderRadius={"50%"}
+            margin="auto"
           >
-            <ListHeader>Newsletter Signup</ListHeader>
-            <Text fontSize={"small"} color="gray.400">
-              Sign up for special offers, product news, exclusive deals, and
-              more. Plus, VIP Reward Members earn $10 in reward points, $20 for
-              VIP Pro members when they sign up through 2/28/23.
-            </Text>
-            <Stack direction={"column"} width="100%">
-              <InputGroup size="sm">
-                <Input placeholder="Your email" h="2rem" />
-                <InputRightAddon children="Submit" bg="blue.500" cursor={"pointer"} />
-              </InputGroup>
+            <GrLocation size={"40px"} />
+          </Box>
+          <Text fontSize={"2xl"} fontWeight="bold">
+            Visit Our Stores
+          </Text>
+          <Text>
+            Visit our NYC store for shopping, services, repairs, and more.
+          </Text>
+        </Stack>
+      </Flex>
+      <Box bg={"#002f6c"} color="white">
+        <Container as={Stack} maxW={"6xl"} py={10}>
+          <SimpleGrid
+            templateColumns={{
+              sm: "1fr",
+              md: "1fr 1fr ",
+              lg: "1fr 1fr 1fr 2fr",
+            }}
+            spacing={8}
+            textAlign="center"
+          >
+            <Stack
+              align={{ base: "center", md: "flex-start", lg: "flex-start" }}
+              textAlign="start"
+            >
+              <ListHeader>How Can We Help?</ListHeader>
+              <Link href={"#"} color="gray.400">
+                Customer Service
+              </Link>
+              <Link href={"#"} color="gray.400">
+                Track Your Order
+              </Link>
+              <Link href={"#"} color="gray.400">
+                Shipping & Delivery
+              </Link>
+              <Link href={"#"} color="gray.400">
+                In-Store Pickup
+              </Link>
+              <Link href={"#"} color="gray.400">
+                International Orders
+              </Link>
+              <Link href={"#"} color="gray.400">
+                Return Policy
+              </Link>
+              <Link href={"#"} color="gray.400">
+                Contact Us
+              </Link>
+              <Link href={"#"} color="gray.400">
+                Warranties
+              </Link>
+              <Link href={"#"} color="gray.400">
+                Accessibility Policy
+              </Link>
+            </Stack>
 
-              <Stack
-                spacing={6}
-                align={{ base: "center", md: "flex-start", lg: "flex-start" }}
-                margin="auto"
-              >
-                <Stack direction={"row"} spacing={2} marginTop="2rem">
-                  <Text>Follow us:</Text>
+            <Stack
+              align={{ base: "center", md: "flex-start", lg: "flex-start" }}
+              textAlign="start"
+            >
+              <ListHeader>Services & Programs</ListHeader>
+              <Link href={"#"} color="gray.400">
+                ElectroGlad Business Education & Government
+              </Link>
+              <Link href={"#"} color="gray.400">
+                ElectroGlad Edge Credit Card
+              </Link>
+              <Link href={"#"} color="gray.400">
+                VIP Rewards
+              </Link>
+              <Link href={"#"} color="gray.400">
+                Students
+              </Link>
 
-                  <SocialButton label={"Twitter"} href={"#"}>
-                    <FaTwitter size="1.5rem" />
-                  </SocialButton>
-                  <SocialButton label={"facebook"} href={"#"}>
-                    <FaFacebook size="1.5rem" />
-                  </SocialButton>
-                  <SocialButton label={"YouTube"} href={"#"}>
-                    <FaYoutube size="1.5rem" />
-                  </SocialButton>
-                  <SocialButton label={"Instagram"} href={"#"}>
-                    <FaInstagram size="1.5rem" />
-                  </SocialButton>
-                  <SocialButton label={"tiktok"} href={"#"}>
-                    <FaTiktok size="1.5rem" />
-                  </SocialButton>
+              <Link href={"#"} color="gray.400">
+                ElectroGlad Protect
+              </Link>
+              <Link href={"#"} color="gray.400">
+                Photo Printing
+              </Link>
+              <Link href={"#"} color="gray.400">
+                Camera Rentals
+              </Link>
+              <Link href={"#"} color="gray.400">
+                Sell Used Equipment
+              </Link>
+              <Link href={"#"} color="gray.400">
+                {" "}
+                Authorized Apple Service
+              </Link>
+            </Stack>
+            <Stack
+              align={{ base: "center", md: "flex-start", lg: "flex-start" }}
+              textAlign="start"
+            >
+              <ListHeader> Who We Are</ListHeader>
+              <Link href={"#"} color="gray.400">
+                About ElectroGlad
+              </Link>
+              <Link href={"#"} color="gray.400">
+                Our History
+              </Link>
+              <Link href={"#"} color="gray.400">
+                Creator Highlights
+              </Link>
+              <Link href={"#"} color="gray.400">
+                ElectroGlad Reviews
+              </Link>
+              <Link href={"#"} color="gray.400">
+                Map & Directions
+              </Link>
+              <Link href={"#"} color="gray.400">
+                Events
+              </Link>
+              <Link href={"#"} color="gray.400">
+                {" "}
+                Learning Center
+              </Link>
+              <Link href={"#"} color="gray.400">
+                Brands
+              </Link>
+              <Link href={"#"} color="gray.400">
+                {" "}
+                Affiliate Program Careers
+              </Link>
+            </Stack>
+            <Stack align={{ base: "center", md: "center", lg: "center" }}>
+              <ListHeader>Newsletter Signup</ListHeader>
+              <Text fontSize={"small"} color="gray.400">
+                Sign up for special offers, product news, exclusive deals, and
+                more. Plus, VIP Reward Members earn{" "}
+                <span
+                  style={{ fontWeight: "bold", color: "white", fontSize: "lg" }}
+                >
+                  $10
+                </span>{" "}
+                in reward points,{" "}
+                <span
+                  style={{ fontWeight: "bold", color: "white", fontSize: "lg" }}
+                >
+                  $20
+                </span>{" "}
+                for VIP Pro members when they sign up through
+                <span
+                  style={{ fontWeight: "bold", color: "white", fontSize: "lg" }}
+                >
+                  2/28/23.
+                </span>{" "}
+              </Text>
+              <Stack direction={"column"} width="100%">
+                <InputGroup size="sm">
+                  <Input placeholder="Your email" h="2rem" />
+                  <InputRightAddon
+                    children="Submit"
+                    bg="blue.500"
+                    cursor={"pointer"}
+                  />
+                </InputGroup>
+
+                <Stack
+                  spacing={6}
+                  align={{ base: "center", md: "center", lg: "center" }}
+                  margin="auto"
+                >
+                  <Stack direction={"row"} spacing={2} marginTop="2rem">
+                    <Text>Follow us:</Text>
+
+                    <SocialButton label={"Twitter"} href={"#"}>
+                      <FaTwitter size="1.5rem" />
+                    </SocialButton>
+                    <SocialButton label={"facebook"} href={"#"}>
+                      <FaFacebook size="1.5rem" />
+                    </SocialButton>
+                    <SocialButton label={"YouTube"} href={"#"}>
+                      <FaYoutube size="1.5rem" />
+                    </SocialButton>
+                    <SocialButton label={"Instagram"} href={"#"}>
+                      <FaInstagram size="1.5rem" />
+                    </SocialButton>
+                    <SocialButton label={"tiktok"} href={"#"}>
+                      <FaTiktok size="1.5rem" />
+                    </SocialButton>
+                  </Stack>
                 </Stack>
               </Stack>
             </Stack>
-          </Stack>
-        </SimpleGrid>
-      </Container>
-    </Box>
+          </SimpleGrid>
+        </Container>
+      </Box>
+    </>
   );
 }
