@@ -6,7 +6,7 @@ const authenticateToken = (req, res, next) => {
   if (token) {
     jwt.verify(token, "secret", (err, decoded) => {
       if (err) res.status(401).send({ message: "Authorization failed " });
-      req.body.author = decoded.userID;
+      req.body.user = decoded.userID;
       next();
     });
   } else {
