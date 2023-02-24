@@ -7,32 +7,31 @@ import Video from './video';
 function Allcatpro(){
 
     return <div>
-<Tabs variant='soft-rounded' colorScheme='blue'>
+<Tabs variant='soft-rounded'  colorScheme='blue'>
   <TabList>
-    <Tab>PHOTOGRAPHY</Tab>
+    <Tab >PHOTOGRAPHY</Tab>
     <Tab>COMPUTER</Tab>
     <Tab>GAMING</Tab>
     <Tab>DRONE</Tab>
     <Tab>VIDEO</Tab>
-
   </TabList>
   <TabPanels>
     <TabPanel>
-      <p>PHOTOGRAPHY</p>
+      <p style={{ color: "#004387", fontWeight: "bold", fontSize: "24px", margin: "10px 0"}}>PHOTOGRAPHY</p>
 <Photography/>
     </TabPanel>
     <TabPanel>
-      <p>COMPUTER</p>
+      <p style={{ color: "#004387", fontWeight: "bold", fontSize: "24px", margin: "10px 0"}}>COMPUTER</p>
       <Computer/>
     </TabPanel>
     <TabPanel>
-      <p>GAMING</p>
+      <p style={{ color: "#004387", fontWeight: "bold", fontSize: "24px", margin: "10px 0"}}>GAMING</p>
       <Gaming/>
     </TabPanel><TabPanel>
-      <p>DRONE</p>
+      <p style={{ color: "#004387", fontWeight: "bold", fontSize: "24px", margin: "10px 0"}}>DRONE</p>
       <Drone/>
     </TabPanel><TabPanel>
-      <p>VIDEO</p>
+      <p style={{ color: "#004387", fontWeight: "bold", fontSize: "24px", margin: "10px 0"}}>VIDEO</p>
       <Video/>
     </TabPanel>
   </TabPanels>

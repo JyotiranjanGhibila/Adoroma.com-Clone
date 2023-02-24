@@ -64,7 +64,7 @@ function Login() {
             <input type="email" id="email" name="email" value={email} onChange={(e)=>{setEmail(e.target.value)}} placeholder='Email Address' required />
             <label htmlFor="password">Password:</label>
             <input type="password" id="password" name="password" value={password} onChange={(e)=>{setPassword(e.target.value)}} placeholder='Password' required />
-            <button type="submit">Sign in</button>
+            <button id='loginbtn' type="submit">Sign in</button>
           </form>
           <div className="social-login-icons">
   <div className="or-separator">

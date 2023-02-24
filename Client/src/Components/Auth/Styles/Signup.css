@@ -103,11 +103,7 @@ body {
   gap: 4px;
 }
 
-.first {
-}
 
-.last {
-}
 
 .firstlast input {
   flex: 1;
@@ -122,18 +118,21 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  justify-content: left;
+
 }
 
 #checkbox div {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+width: 30%;
 }
 
 #checkbox input[type="checkbox"] {
   margin-right: 10
 }
-button[type="submit"] {
+#submitbtn{
   background-color: #ed5132;
   border: none;
   color: #fff;
@@ -144,7 +143,7 @@ button[type="submit"] {
   cursor: pointer;
 }
 
-button[type="submit"]:hover {
+#submitbtn:hover {
   background-color: #ff704d;
 }
 /* small screens */

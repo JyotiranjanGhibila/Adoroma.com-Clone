@@ -101,7 +101,7 @@ text-decoration: underline;
   border-radius: 5px;
 }
 
-.login-form button[type="submit"] {
+#loginbtn {
   border: none;
   border-radius: 3px;
   color: #fff;
@@ -116,7 +116,9 @@ text-decoration: underline;
 }
 
 
-
+#loginbtn:hover {
+  background-color: #ff704d;
+}
 .social-login-icons {
   margin-top: 50px;
 }

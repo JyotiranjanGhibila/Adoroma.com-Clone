@@ -30,7 +30,8 @@ import {
   FiMenu,
   FiBell,
   FiChevronDown,
-  FiCompass
+  FiCompass,
+  FiSearch
 } from "react-icons/fi";
 import { IconType } from "react-icons";
 import { ReactText } from "react";
@@ -50,7 +51,7 @@ export default function SidebarWithHeader({
 
  
   return (
-    <Box minH="100vh" bg={useColorModeValue("#ffffff")}>
+    <Box minH="100vh" bg={useColorModeValue("#f0f8ff")}>
       <SidebarContent
         onClose={() => onClose}
         display={{ base: "none", md: "block" }}
@@ -145,9 +146,9 @@ const NavItem = ({ icon, children, ...rest }) => {
 
 const MobileNav = ({ onOpen, ...rest }) => {
   const logout = () => {
-    window.location.href="/"
+    window.location.href = "/"
   };
-  
+
   return (
     <Flex
       ml={{ base: 0, md: 60 }}
@@ -178,12 +179,15 @@ const MobileNav = ({ onOpen, ...rest }) => {
       </Text>
 
       <HStack spacing={{ base: "0", md: "6" }}>
-        <IconButton
-          size="lg"
-          variant="ghost"
-          aria-label="open menu"
-          icon={<FiBell />}
-        />
+        <Box
+          display={{ base: "none", md: "flex" }}
+          alignItems="center"
+          color="gray.500"
+          cursor="pointer"
+        >
+          <Icon as={FiSearch} fontSize="lg" />
+        </Box>
+
         <Flex alignItems={"center"}>
           <Menu>
             <MenuButton
@@ -204,8 +208,10 @@ const MobileNav = ({ onOpen, ...rest }) => {
                   spacing="1px"
                   ml="2"
                 >
-                  <Text fontSize="sm">Karmit Verma</Text>
-                  <Text fontSize="xs" color="gray.600">
+                  <Text fontSize="sm" fontWeight="bold">
+                    Karmit Verma
+                  </Text>
+                  <Text fontSize="xs" color="gray.500">
                     Admin
                   </Text>
                 </VStack>

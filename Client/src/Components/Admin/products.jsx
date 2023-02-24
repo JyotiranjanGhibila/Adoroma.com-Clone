@@ -10,7 +10,7 @@ const ProductList = ({ apiUrl }) => {
   }, [apiUrl]);
 
   const handleDelete = (id) => {
-    fetch(`${apiUrl}/api/delete/${id}`,{
+    fetch(`https://taupe-raven-gear.cyclic.app/api/admin/delete/${id}`,{
       method:'DELETE',
       headers:{
       }
@@ -24,31 +24,31 @@ const ProductList = ({ apiUrl }) => {
     .catch((err) => console.log(err))
   };
 
-  const handleUpdate = (id,currtitle,currimg,currbrand,curritemtag,currprice,currinventory) => {
+  const handleUpdate = (id,currtitle,currimg,currbrand,currprice,curritemtag,currinventory) => {
     const updateditle = prompt("Enter updated title", currtitle);
-    const updatedimg = prompt("Enter updated ", currimg);
-    const updateditemtag = prompt("Enter updated ",curritemtag );
-    const updatedbrand = prompt("Enter updated ",currbrand );
-    const updatedprice = prompt("Enter updated ",currprice );
-    const updatedinventory = prompt("Enter updated ",currinventory );
+    const updatedimg = prompt("Enter updated image ", currimg);
+    const updateditemtag = prompt("Enter updated item_tag ",curritemtag );
+    const updatedbrand = prompt("Enter updated brand ",currbrand );
+    const updatedprice = prompt("Enter updated price",currprice );
+    const updatedinventory = prompt("Enter updated inventory",currinventory );
+    const price = Number(updatedprice);
 
 
     const data = {
       title: updateditle || currtitle,
       img: updatedimg || currimg,
       brand: updatedbrand || currbrand,
-      price: updatedprice || currprice,
+      price: isNaN(price) ? currprice : price,
       item_tag: updateditemtag || curritemtag,
       inventory: updatedinventory || currinventory,
 
 
     }
 
-    fetch(`${apiUrl}/api/update/${id}`,{
+    fetch(`https://taupe-raven-gear.cyclic.app/api/admin/update/${id}`,{
       method:'PATCH',
       headers:{
-        "Content-type":"application/json",
-        "Authorization":localStorage.getItem("token")
+        "Content-type":"application/json"
       },
       body:JSON.stringify(data)
     })
@@ -56,7 +56,7 @@ const ProductList = ({ apiUrl }) => {
     .then((res) => {
       console.log(res);
       // eslint-disable-next-line no-restricted-globals
-      location.reload();
+      // location.reload();
     })
     .catch((err) => console.log(err))
   };

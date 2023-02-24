@@ -80,20 +80,12 @@ const navigate=useNavigate();
             
             <div>
             <input type="checkbox"/>
-            <p>Yes, I would like to receive expert tips <br /> product news.</p>
-            </div>
-            <div>
-            <input type="checkbox"/>
-            <p>Yes, sign me up for Adorama Rewards.</p>
-            </div>
-            <div>
-            <input type="checkbox"/>
             <p>Remember Me.</p>
 
             </div>
 
             </div>
-            <button  type="submit">Create Account</button>
+            <button id='submitbtn' type="submit">Create Account</button>
           </form>
          
         </div>

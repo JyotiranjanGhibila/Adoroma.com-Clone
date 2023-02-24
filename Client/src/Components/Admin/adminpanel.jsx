@@ -1,7 +1,7 @@
 import { Box, Flex, Input, Select, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
 import Users from "./Users";
-import ProductForm from "./Addproducts";
+import  AddProductForm from "./Addproducts";
 import Allcatpro from "./Allcatpro";
 const AdminPanel = (props) => {
   const [selectedOption, setSelectedOption] = useState("all-products");
@@ -44,7 +44,7 @@ const AdminPanel = (props) => {
         {selectedOption === "add-products" && (
           <Box>
             {
-              <ProductForm/>
+              <AddProductForm/>
             }
           </Box>
         )}
