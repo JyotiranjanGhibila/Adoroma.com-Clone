@@ -22,8 +22,8 @@
       "category": "PS5"
     },
     {
-      "img": "https://rukminim1.flixcart.com/image/612/612/xif0q/physical-game/h/g/e/no-collector-s-editions-god-of-war-ragnarok-ce-dual-full-game-original-imagjuf2qxzgwhgh.jpeg?q=70",
-      "title": "God of War Ragnarok (Collector�s Editions)",
+      "img": "https://rukminim1.flixcart.com/image/416/416/l1tmf0w0/physical-game/r/s/d/no-standard-edition-ps5-grand-theft-auto-v-full-game-ps5-original-imagdb7brucyfrqf.jpeg?q=70",
+      "title": "PS5 Grand Theft Auto V  (for PS5)",
       "id": 4,
       "price": 2499,
       "category": "PS5"
@@ -99,13 +99,6 @@
       "category": "Controller"
     },
     {
-      "img": "https://rukminim1.flixcart.com/image/612/612/xif0q/gamepad/9/p/i/new-brand-offer-super-8-bit-tv-video-game-console-with-2-game-original-imagjz386cxbyx8g.jpeg?q=70",
-      "title": "Cospex NEW BRAND OFFER Super 8 bit Tv Video Game Consol...",
-      "id": 15,
-      "price": 1929,
-      "category": "Controller"
-    },
-    {
       "img": "https://rukminim1.flixcart.com/image/612/612/xif0q/gamepad/s/8/k/2-in-1-mobile-game-controller-and-mobile-gamepad-holder-handle-original-imafeejjuewtwcga.jpeg?q=70",
       "title": "LionBolt 2 in 1 Mobile Game Controller and Mobile Gamep...",
       "id": 16,
@@ -142,168 +135,148 @@
     },
 
     {
-      "img": "https://rukminim1.flixcart.com/image/612/612/kjuby4w0/cpu/n/q/k/assembled-gaming-computer-1-tb-8-gb-2600-1-dzab-original-imafzbgjkpsyqkx4.jpeg?q=70",
-      "title": "DZAB Core i7 860 (8 RAM/Nvidia Graphics Card Graphics/1...",
-      "id": 21,
-      "price": 47999,
-      "category": "pcgames"
-    },
-    {
-      "img": "https://rukminim1.flixcart.com/image/612/612/xif0q/cpu/y/5/3/3-0-sonet-with-intel-core-i5-750-processor-500-punta-original-imagg7ftuzdktpgg.jpeg?q=70",
-      "title": "Punta Core i7-4770 Processor (8M Cache, up to 3.20 GHz)...",
+      "img": "https://www.adorama.com/images/product/iby60265i.jpg",
+      "title": "iBUYPOWER Y60265i Gaming Desktop Computer,i7-12700KF,32GB,1TB SSD,RTX 3070, W11H",
       "id": 22,
-      "price": 49999,
+      "price": 499999,
       "category": "pcgames"
     },
+
     {
-      "img": "https://rukminim1.flixcart.com/image/612/612/jv2p6kw0/cpu/z/h/z/tower-pc-assembled-computer-electrobot-original-imafg2566gyppt7n.jpeg?q=70",
-      "title": "Electrobot Core 2 Duo (4 GB RAM/ON Board Graphics/500 G...",
-      "id": 23,
-      "price": 7500,
-      "category": "pcgames"
-    },
-    {
-      "img": "https://rukminim1.flixcart.com/image/612/612/kw2fki80/cpu/q/g/b/2-93-assembled-intel-core-i3-3rd-gen-cpu-500-spotview-original-imag8tsqcmphhjgd.jpeg?q=70",
-      "title": "Spotview Assembled Gaming CPU i5, 8GB RAM, 1TB HDD, 240...",
-      "id": 24,
-      "price": 37870,
-      "category": "pcgames"
-    },
-    {
-      "img": "https://rukminim1.flixcart.com/image/612/612/xif0q/desktop-computer/c/f/9/0-elite-gaming-sn-auto-original-imagmzfbudkbkepq.jpeg?q=70",
-      "title": "SN Auto Intel Premium Quad Core (32 GB / 1 TB / Windows...",
+      "img": "https://www.adorama.com/images/product/cytgmu2b09wm.jpg",
+      "title": "CLX SET VR Gaming Desktop, i7-13700KF, 64GB,1TB SSD+6TB HDD, RTX 4080,W11H,Black",
       "id": 25,
       "price": 399000,
       "category": "pcgames"
     },
     {
-      "img": "https://rukminim1.flixcart.com/image/612/612/ktizdzk0/cpu/p/n/r/3-0-gt-gamer-500-zoonis-original-imag6ue7xhvmufgz.jpeg?q=70",
+      "img": "https://www.adorama.com/images/product/cytgmu2b08bm.jpg",
       "title": "ZOONIS Core i3 10th Generation 10100 3.4Ghz (8 GB RAM/G...",
       "id": 26,
       "price": 69999,
       "category": "pcgames"
     },
     {
-        "img": "https://rukminim1.flixcart.com/image/312/312/l3rmzrk0/computer/s/z/r/-original-imagetgzg4pgszmt.jpeg?q=70",
-        "category": "lapgames",
-        "title": "ASUS TUF Gaming F15 Core i5 10th Gen - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce G...",
-        "id": 30,
-        "processor": "Intel Core i5 Processor (10th Gen)",
-        "ram": "8 GB DDR4 RAM",
-        "os": "Windows 11 Operating System",
-        "size": "512 GB SSD",
-        "price": 70990
-      },
-      {
-        "img": "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/b/e/h/-original-imagjyc69gh3a8wu.jpeg?q=70",
-        "category": "lapgames",
-        "title": "acer Aspire 7 Ryzen 5 Hexa Core AMD R5-5500U - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA G...",
-        "id": 31,
-        "processor": "Free upgrade to Windows 11 when available",
-        "ram": "AMD Ryzen 5 Hexa Core Processor",
-        "os": "8 GB DDR4 RAM",
-        "size": "64 bit Windows 11 Operating System",
-        "price": 76999
-      },
-      {
-        "img": "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/8/l/f/-original-imagg2ckcragzhhe.jpeg?q=70",
-        "category": "lapgames",
-        "title": "MSI Core i9 12th Gen - (16 GB/1 TB SSD/Windows 11 Home/6 GB Graphics/NVIDIA GeForce RTX 3060/165 Hz) P...",
-        "id": 32,
-        "processor": "Intel Core i9 Processor (12th Gen)",
-        "ram": "16 GB DDR4 RAM",
-        "os": "64 bit Windows 11 Operating System",
-        "size": "1 TB SSD",
-        "price": 135391
-      },
-      {
-        "img": "https://rukminim1.flixcart.com/image/312/312/l5bd5zk0/computer/l/e/k/15-fb0040ax-gaming-laptop-hp-original-imaggyuezf9qtypd.jpeg?q=70",
-        "category": "lapgames",
-        "title": "HP Victus Ryzen 5 Hexa Core 5600H - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce GTX ...",
-        "id": 33,
-        "processor": "AMD Ryzen 5 Hexa Core Processor",
-        "ram": "8 GB DDR4 RAM",
-        "os": "Windows 11 Operating System",
-        "size": "512 GB SSD",
-        "price": 77595
-      },
-      {
-        "img": "https://rukminim1.flixcart.com/image/312/312/l3rmzrk0/computer/z/2/c/-original-imagetjyhhtrtkdg.jpeg?q=70",
-        "category": "lapgames",
-        "title": "ASUS TUF Gaming A17 with 90Whr Battery Ryzen 5 Hexa Core AMD R5-4600H - (8 GB/512 GB SSD/Windows 11 Ho...",
-        "id": 34,
-        "processor": "AMD Ryzen 5 Hexa Core Processor",
-        "ram": "8 GB DDR4 RAM",
-        "os": "64 bit Windows 11 Operating System",
-        "size": "512 GB SSD",
-        "price": 71990
-      },
-      {
-        "img": "https://rukminim1.flixcart.com/image/312/312/l2qhjm80/computer/j/h/b/katana-gf66-12ud-gaming-laptop-msi-original-imageym6wfkavhyh.jpeg?q=70",
-        "category": "lapgames",
-        "title": "MSI Katana GF66 Core i5 12th Gen - (16 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce RTX ...",
-        "id": 35,
-        "processor": "Intel Core i5 Processor (12th Gen)",
-        "ram": "16 GB DDR4 RAM",
-        "os": "64 bit Windows 11 Operating System",
-        "size": "512 GB SSD",
-        "price": 111990
-      },
-      {
-        "img": "https://rukminim1.flixcart.com/image/312/312/l2qhjm80/computer/p/i/1/crosshair-15-b12uez-gaming-laptop-msi-original-imageymuhhs7djjf.jpeg?q=70",
-        "category": "lapgames",
-        "title": "MSI Crosshair 15 Core i7 12th Gen - (16 GB/512 GB SSD/Windows 11 Home/6 GB Graphics/NVIDIA GeForce RTX...",
-        "id": 36,
-        "processor": "Intel Core i7 Processor (12th Gen)",
-        "ram": "16 GB DDR4 RAM",
-        "os": "64 bit Windows 11 Operating System",
-        "size": "512 GB SSD",
-        "price": 134990
-      },
-      {
-        "img": "https://rukminim1.flixcart.com/image/312/312/kynb6vk0/computer/k/j/a/-original-imagaufne7h4hgbz.jpeg?q=70",
-        "category": "lapgames",
-        "title": "Lenovo Ideapad Gaming 3 Ryzen 5 Hexa Core AMD R5-5600H - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphic...",
-        "id": 37,
-        "processor": "AMD Ryzen 5 Hexa Core Processor",
-        "ram": "8 GB DDR4 RAM",
-        "os": "64 bit Windows 11 Operating System",
-        "size": "512 GB SSD",
-        "price": 86690
-      },
-      {
-        "img": "https://rukminim1.flixcart.com/image/312/312/l0vbukw0/computer/z/o/e/-original-imagckcfz6jgjn3z.jpeg?q=70",
-        "category": "lapgames",
-        "title": "ASUS ROG Strix G15 (2022) with 90Whr Battery Ryzen 7 Octa Core AMD R7-6800H - (16 GB/1 TB SSD/Windows ...",
-        "id": 38,
-        "processor": "AMD Ryzen 7 Octa Core Processor",
-        "ram": "16 GB DDR5 RAM",
-        "os": "Windows 11 Operating System",
-        "size": "1 TB SSD",
-        "price": 176990
-      },
-      {
-        "img": "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/t/8/fa506icb-hn005w-gaming-laptop-asus-original-imagguv66hcfz7yx.jpeg?q=70",
-        "category": "lapgames",
-        "title": "ASUS TUF GAMING A15 Ryzen 7 Octa Core 4800H - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA Ge...",
-        "id": 39,
-        "processor": "AMD Ryzen 7 Octa Core Processor",
-        "ram": "8 GB DDR4 RAM",
-        "os": "64 bit Windows 11 Operating System",
-        "size": "512 GB SSD",
-        "price": 92990
-      },
-      {
-        "img": "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/b/e/h/-original-imagjyc69gh3a8wu.jpeg?q=70",
-        "category": "lapgames",
-        "title": "acer Aspire 7 Ryzen 5 Hexa Core 5500U - (16 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce...",
-        "id": 40,
-        "processor": "AMD Ryzen 5 Hexa Core Processor",
-        "ram": "16 GB DDR4 RAM",
-        "os": "64 bit Windows 11 Operating System",
-        "size": "512 GB SSD",
-        "price": 89999
-      }
+      "img": "https://rukminim1.flixcart.com/image/312/312/l3rmzrk0/computer/s/z/r/-original-imagetgzg4pgszmt.jpeg?q=70",
+      "category": "lapgames",
+      "title": "ASUS TUF Gaming F15 Core i5 10th Gen - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce G...",
+      "id": 30,
+      "processor": "Intel Core i5 Processor (10th Gen)",
+      "ram": "8 GB DDR4 RAM",
+      "os": "Windows 11 Operating System",
+      "size": "512 GB SSD",
+      "price": 70990
+    },
+    {
+      "img": "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/b/e/h/-original-imagjyc69gh3a8wu.jpeg?q=70",
+      "category": "lapgames",
+      "title": "acer Aspire 7 Ryzen 5 Hexa Core AMD R5-5500U - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA G...",
+      "id": 31,
+      "processor": "Free upgrade to Windows 11 when available",
+      "ram": "AMD Ryzen 5 Hexa Core Processor",
+      "os": "8 GB DDR4 RAM",
+      "size": "64 bit Windows 11 Operating System",
+      "price": 76999
+    },
+    {
+      "img": "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/8/l/f/-original-imagg2ckcragzhhe.jpeg?q=70",
+      "category": "lapgames",
+      "title": "MSI Core i9 12th Gen - (16 GB/1 TB SSD/Windows 11 Home/6 GB Graphics/NVIDIA GeForce RTX 3060/165 Hz) P...",
+      "id": 32,
+      "processor": "Intel Core i9 Processor (12th Gen)",
+      "ram": "16 GB DDR4 RAM",
+      "os": "64 bit Windows 11 Operating System",
+      "size": "1 TB SSD",
+      "price": 135391
+    },
+    {
+      "img": "https://rukminim1.flixcart.com/image/312/312/l5bd5zk0/computer/l/e/k/15-fb0040ax-gaming-laptop-hp-original-imaggyuezf9qtypd.jpeg?q=70",
+      "category": "lapgames",
+      "title": "HP Victus Ryzen 5 Hexa Core 5600H - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce GTX ...",
+      "id": 33,
+      "processor": "AMD Ryzen 5 Hexa Core Processor",
+      "ram": "8 GB DDR4 RAM",
+      "os": "Windows 11 Operating System",
+      "size": "512 GB SSD",
+      "price": 77595
+    },
+    {
+      "img": "https://rukminim1.flixcart.com/image/312/312/l3rmzrk0/computer/z/2/c/-original-imagetjyhhtrtkdg.jpeg?q=70",
+      "category": "lapgames",
+      "title": "ASUS TUF Gaming A17 with 90Whr Battery Ryzen 5 Hexa Core AMD R5-4600H - (8 GB/512 GB SSD/Windows 11 Ho...",
+      "id": 34,
+      "processor": "AMD Ryzen 5 Hexa Core Processor",
+      "ram": "8 GB DDR4 RAM",
+      "os": "64 bit Windows 11 Operating System",
+      "size": "512 GB SSD",
+      "price": 71990
+    },
+    {
+      "img": "https://rukminim1.flixcart.com/image/312/312/l2qhjm80/computer/j/h/b/katana-gf66-12ud-gaming-laptop-msi-original-imageym6wfkavhyh.jpeg?q=70",
+      "category": "lapgames",
+      "title": "MSI Katana GF66 Core i5 12th Gen - (16 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce RTX ...",
+      "id": 35,
+      "processor": "Intel Core i5 Processor (12th Gen)",
+      "ram": "16 GB DDR4 RAM",
+      "os": "64 bit Windows 11 Operating System",
+      "size": "512 GB SSD",
+      "price": 111990
+    },
+    {
+      "img": "https://rukminim1.flixcart.com/image/312/312/l2qhjm80/computer/p/i/1/crosshair-15-b12uez-gaming-laptop-msi-original-imageymuhhs7djjf.jpeg?q=70",
+      "category": "lapgames",
+      "title": "MSI Crosshair 15 Core i7 12th Gen - (16 GB/512 GB SSD/Windows 11 Home/6 GB Graphics/NVIDIA GeForce RTX...",
+      "id": 36,
+      "processor": "Intel Core i7 Processor (12th Gen)",
+      "ram": "16 GB DDR4 RAM",
+      "os": "64 bit Windows 11 Operating System",
+      "size": "512 GB SSD",
+      "price": 134990
+    },
+    {
+      "img": "https://rukminim1.flixcart.com/image/312/312/kynb6vk0/computer/k/j/a/-original-imagaufne7h4hgbz.jpeg?q=70",
+      "category": "lapgames",
+      "title": "Lenovo Ideapad Gaming 3 Ryzen 5 Hexa Core AMD R5-5600H - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphic...",
+      "id": 37,
+      "processor": "AMD Ryzen 5 Hexa Core Processor",
+      "ram": "8 GB DDR4 RAM",
+      "os": "64 bit Windows 11 Operating System",
+      "size": "512 GB SSD",
+      "price": 86690
+    },
+    {
+      "img": "https://rukminim1.flixcart.com/image/312/312/l0vbukw0/computer/z/o/e/-original-imagckcfz6jgjn3z.jpeg?q=70",
+      "category": "lapgames",
+      "title": "ASUS ROG Strix G15 (2022) with 90Whr Battery Ryzen 7 Octa Core AMD R7-6800H - (16 GB/1 TB SSD/Windows ...",
+      "id": 38,
+      "processor": "AMD Ryzen 7 Octa Core Processor",
+      "ram": "16 GB DDR5 RAM",
+      "os": "Windows 11 Operating System",
+      "size": "1 TB SSD",
+      "price": 176990
+    },
+    {
+      "img": "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/m/t/8/fa506icb-hn005w-gaming-laptop-asus-original-imagguv66hcfz7yx.jpeg?q=70",
+      "category": "lapgames",
+      "title": "ASUS TUF GAMING A15 Ryzen 7 Octa Core 4800H - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA Ge...",
+      "id": 39,
+      "processor": "AMD Ryzen 7 Octa Core Processor",
+      "ram": "8 GB DDR4 RAM",
+      "os": "64 bit Windows 11 Operating System",
+      "size": "512 GB SSD",
+      "price": 92990
+    },
+    {
+      "img": "https://rukminim1.flixcart.com/image/312/312/xif0q/computer/b/e/h/-original-imagjyc69gh3a8wu.jpeg?q=70",
+      "category": "lapgames",
+      "title": "acer Aspire 7 Ryzen 5 Hexa Core 5500U - (16 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce...",
+      "id": 40,
+      "processor": "AMD Ryzen 5 Hexa Core Processor",
+      "ram": "16 GB DDR4 RAM",
+      "os": "64 bit Windows 11 Operating System",
+      "size": "512 GB SSD",
+      "price": 89999
+    }
   ],
   "add": []
 }
