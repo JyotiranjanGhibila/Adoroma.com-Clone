@@ -13,7 +13,7 @@ import {
     
     <Flex
       w={'full'}
-      h={'28vh'}
+      h={{base:"14vh",md:'24vh',lg:'27vh'}}
       backgroundImage={
         'url(https://www.adorama.com/images/cms/15616Photography-Category-Header-BG_18641.jpg)'
       }
@@ -30,7 +30,7 @@ import {
             color={'white'}
             fontWeight={600}
             lineHeight={1.2}
-            fontSize={'40px'}
+            fontSize={{base:'27',md:'50',lg:'80'}}
            >
           Photography
           </Text>
