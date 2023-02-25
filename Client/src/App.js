@@ -2,6 +2,7 @@
 import AllComponents from "./Components/AllComponents";
 
 import "./App.css";
+import MainRoutes from "./Pages/MainRoutes";
 
 
 function App() {
@@ -9,8 +10,8 @@ function App() {
     <div className="App">
 
      <AllComponents/>
-
-
+    {/* <MainRoutes/> */}
+  
     </div>
   );
 }
