@@ -1,8 +1,8 @@
 import { Box, Flex, Input, Select, Text } from "@chakra-ui/react";
 import React, { useState } from "react";
-import Users from "./Users";
 import  AddProductForm from "./Addproducts";
 import Allcatpro from "./Allcatpro";
+import UserTable from "./Users";
 const AdminPanel = (props) => {
   const [selectedOption, setSelectedOption] = useState("all-products");
 
@@ -20,7 +20,7 @@ const AdminPanel = (props) => {
           <Flex align="center">
             <Select mx="2" w="200px" value={selectedOption} onChange={handleOptionChange}>
               <option value="all-products">All Products</option>
-              <option value="all-users">Customers and Users</option>
+              <option value="all-users">Users</option>
               <option value="add-products">Add Products</option>
             </Select>
           </Flex>
@@ -37,7 +37,7 @@ const AdminPanel = (props) => {
         {selectedOption === "all-users" && (
           <Box>
             {
-<Users/>
+<UserTable/>
             }
           </Box>
         )}

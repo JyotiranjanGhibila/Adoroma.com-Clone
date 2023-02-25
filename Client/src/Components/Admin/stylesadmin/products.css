@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
+  margin-top: 5px;
 }
 
 .product-item {
@@ -120,4 +121,19 @@
 
 .delete-btn {
   background-color: #dc3545;
+}
+.total-inventory {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
+  color: #333;
+  padding: 0.5rem;
+}
+.total-products{
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  padding: 0.5rem;
 }

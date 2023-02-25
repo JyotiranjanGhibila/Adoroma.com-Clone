@@ -2,11 +2,17 @@ import React, { useState, useEffect } from "react";
 import "./stylesadmin/products.css"
 const ProductList = ({ apiUrl }) => {
   const [products, setProducts] = useState([]);
+  const [totalInventory, setTotalInventory] = useState(0);
+  const [totalProducts, setTotalProducts] = useState(0);
 
   useEffect(() => {
     fetch(apiUrl)
       .then((response) => response.json())
-      .then((data) => setProducts(data));
+      .then((data) => {
+        setProducts(data);
+        setTotalInventory(data.reduce((total, product) => total + product.inventory, 0));
+        setTotalProducts(data.length);
+      });
   }, [apiUrl]);
 
   const handleDelete = (id) => {
@@ -56,13 +62,18 @@ const ProductList = ({ apiUrl }) => {
     .then((res) => {
       console.log(res);
       // eslint-disable-next-line no-restricted-globals
-      // location.reload();
+      location.reload();
     })
     .catch((err) => console.log(err))
   };
 
   return (
-    <div className="product-list">
+    <div>
+        <div className="total-inventory">Total inventory: {totalInventory}</div>
+        <div className="total-products">Total products: {totalProducts}</div>
+
+      <div className="product-list">
+
       {products.map((product) => (
         <div className="product-item" key={product.id}>
           <div className="product-image">
@@ -82,7 +93,7 @@ const ProductList = ({ apiUrl }) => {
             </div>
             <div className="product-item-tag">{product.item_tag}</div>
             <div className="product-buttons">
-              <button className="update-btn" onClick={() => handleUpdate(product._id,product.title,product.brand,product.img,product.price,product.item_tag,product.inventory)}>
+              <button className="update-btn" onClick={() => handleUpdate(product._id,product.title,product.img,product.brand,product.price,product.item_tag,product.inventory)}>
                 Update
               </button>
               <button className="delete-btn" onClick={() => handleDelete(product._id)}>
@@ -92,6 +103,7 @@ const ProductList = ({ apiUrl }) => {
           </div>
         </div>
       ))}
+    </div>
     </div>
   );
 };
