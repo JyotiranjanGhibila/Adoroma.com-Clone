@@ -1,13 +1,28 @@
-import Navbar from "./Components/Navbar/Navbar";
-import "./App.css";
+import AllComponents from "./Components/AllComponents";
 
-import Home from "./Pages/Home/Home";
+import CartScreen from "./Components/CartScreen/CartScreen";
+import CartAddress from "./Components/Checkout/Checkout";
+import Payment from "./Components/Payment/Payment";
+
+
+import "./App.css";
+import MainRoutes from "./Pages/MainRoutes";
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Home />
+
+      {/* <Navbar /> */}
+      {/* <AddToCartButton /> */}
+      {/* <CartScreen /> */}
+      {/* <AllComponents/> */}
+      {/* <CartAddress /> */}
+      <Payment/>
+
+      {/* <AllComponents /> */}
+      <MainRoutes/>
+
     </div>
   );
 }
