@@ -1,15 +1,19 @@
+
 import AllComponents from "./Components/AllComponents";
-import MainRoutes from "./Pages/MainRoutes"
+
 import "./App.css";
+
 
 function App() {
   return (
     <div className="App">
-     {/* <AllComponents/> */}
-     <MainRoutes/>
+
+     <AllComponents/>
+
+
     </div>
-  )
+  );
+}
 
-  }
 
-export default App
+export default App;
