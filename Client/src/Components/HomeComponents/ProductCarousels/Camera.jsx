@@ -11,9 +11,9 @@ import ReactStars from "react-stars";
 const data = [
   {
     isNew: true,
-    imageURL: "https://www.adorama.com/images/product/sops5gowb.jpg",
+    imageURL: "https://www.adorama.com/images/product/3pactt.jpg",
     name: "Sony PlayStation 5 825GB Gaming Console w/God of War Ragnarok, Standard Edition",
-    price: 14099.0,
+    price: 16099.0,
     rating: 4.5,
     numReviews: 34,
     id: 1,
@@ -21,8 +21,8 @@ const data = [
   {
     isNew: false,
     name: "Nintendo Switch 64GB OLED Console with White Joy-Con Controllers and Bundle Kit",
-    imageURL: "https://www.adorama.com/images/product/niswioledwak.jpg",
-    price: 10099.0,
+    imageURL: "https://www.adorama.com/images/product/3pcfttaaaaa.jpg",
+    price: 14099.0,
     rating: 3,
     numReviews: 34,
     id: 2,
@@ -30,8 +30,8 @@ const data = [
   {
     isNew: true,
     name: "Nintendo Switch 64GB OLED Console with White Joy-Con Controllers",
-    imageURL: "https://www.adorama.com/images/product/niswioledw.jpg",
-    price: 87200.0,
+    imageURL: "https://www.adorama.com/images/product/3phb1.jpg",
+    price: 8200.0,
     rating: 2,
     numReviews: 34,
     id: 3,
@@ -39,7 +39,7 @@ const data = [
   {
     isNew: false,
     name: "Microsoft Xbox Series S Gilded Hunters Bundle",
-    imageURL: "https://www.adorama.com/images/product/xbfxssghb.jpg",
+    imageURL: "https://www.adorama.com/images/product/3pp4aork3.jpg",
     price: 56000.0,
     rating: 2,
     numReviews: 34,
@@ -48,7 +48,7 @@ const data = [
   {
     isNew: false,
     name: "Nintendo Switch 64GB OLED Console with Joy-Con Controllers and Bundle Kit",
-    imageURL: "https://www.adorama.com/images/product/niswioldrbak.jpg",
+    imageURL: "https://www.adorama.com/images/product/3pshpg.jpg",
     price: 34500.0,
     rating: 4,
     numReviews: 34,
@@ -66,13 +66,15 @@ const data = [
   {
     isNew: false,
     name: "Microsoft Xbox Series S Console",
-    imageURL: "https://www.adorama.com/images/product/xbrrs00001.jpg",
+    imageURL: "https://www.adorama.com/images/product/3pvhq3.jpg",
     price: 18500.0,
     rating: 5,
     numReviews: 34,
     id: 7
   },
 ];
+
+
 
 const buttonStyle = {
   width: "30px",
@@ -113,8 +115,7 @@ const responsiveSettings = [
   },
 ];
 
-
-const Gaming = () => {
+const Camera = () => {
   return (
     <div
       style={{
@@ -126,7 +127,7 @@ const Gaming = () => {
     >
       <Flex textAlign={"left"} alignItems="baseline" padding="10px">
         <Heading textAlign={"left"} fontWeight="normal">
-          Gaming and Accessories
+          Camera Accessories
         </Heading>
         {}
         <span>Special offers</span>
@@ -206,11 +207,7 @@ const Gaming = () => {
                   margin={1}
                 >
                   <Box fontSize="md" as="p" lineHeight="tight" margin={1}>
-                    <ReactStars
-                      count={el.rating}
-                      size={24}
-                      color1={"#ffd700"}
-                    />
+                    <ReactStars count={el.rating} size={24} color1={"#ffd700"} />
                   </Box>
                 </Flex>
                 <Flex justifyContent="center" alignContent="center">
@@ -221,7 +218,7 @@ const Gaming = () => {
                   </Box>
                 </Flex>
                 <Flex justifyContent="center" alignContent="center">
-                  <Box fontSize="md" margin="auto">
+                  <Box fontSize="md">
                     <Box
                       as="span"
                       color={"blue.500"}
@@ -233,8 +230,8 @@ const Gaming = () => {
                   </Box>
                 </Flex>
 
-                <Box className="hide" margin="auto">
-                  <AddtoCartModal data={data} />
+                <Box className="hide">
+                  <AddtoCartModal />
                 </Box>
               </Box>
             </Box>
@@ -245,4 +242,4 @@ const Gaming = () => {
   );
 };
 
-export default Gaming;
+export default Camera;
