@@ -67,8 +67,6 @@ const data = [
   },
 ];
 
-
-
 const buttonStyle = {
   width: "30px",
   background: "none",
@@ -200,7 +198,11 @@ const Gaming = () => {
                   margin={1}
                 >
                   <Box fontSize="md" as="p" lineHeight="tight" margin={1}>
-                    <ReactStars count={el.rating} size={24} color1={"#ffd700"} />
+                    <ReactStars
+                      count={el.rating}
+                      size={24}
+                      color1={"#ffd700"}
+                    />
                   </Box>
                 </Flex>
                 <Flex justifyContent="center" alignContent="center">
@@ -211,7 +213,7 @@ const Gaming = () => {
                   </Box>
                 </Flex>
                 <Flex justifyContent="center" alignContent="center">
-                  <Box fontSize="md">
+                  <Box fontSize="md" margin="auto">
                     <Box
                       as="span"
                       color={"blue.500"}
@@ -223,8 +225,8 @@ const Gaming = () => {
                   </Box>
                 </Flex>
 
-                <Box className="hide">
-                  <AddtoCartModal />
+                <Box className="hide" margin="auto">
+                  <AddtoCartModal data={data} />
                 </Box>
               </Box>
             </Box>

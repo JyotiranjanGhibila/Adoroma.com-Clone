@@ -10,7 +10,8 @@ import {
 } from "@chakra-ui/react";
 import "./addToCartModal.css";
 
-export default function AddToCartButton() {
+export default function AddToCartButton({ data }) {
+  console.log("data", data);
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
