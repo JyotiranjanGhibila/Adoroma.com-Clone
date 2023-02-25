@@ -5,6 +5,7 @@ import AddToCartButton from "./Components/cartComponents/AddtoCartModal";
 import AllComponents from "./Components/AllComponents";
 import CartScreen from "./Components/CartScreen/CartScreen";
 import CartAddress from "./Components/Checkout/Checkout";
+import Payment from "./Components/Payment/Payment";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       {/* <AddToCartButton /> */}
       {/* <CartScreen /> */}
       {/* <AllComponents/> */}
-      <CartAddress />
+      {/* <CartAddress /> */}
+      <Payment/>
     </div>
   );
 }

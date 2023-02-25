@@ -1,10 +1,11 @@
 .maindiv_container {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   width: 65%;
   margin: 10vh auto;
   height: 70vh;
   gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .h1_shipping {
   border-bottom: 1px solid rgb(161, 155, 155);
