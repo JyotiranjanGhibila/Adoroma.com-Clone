@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 
 import Photography from "../Components/Products/Photography";
+import GameCard from "./Products/GameCard";
 import Gaming from "./Products/Gaming";
 
 const AllComponents = () => {
@@ -10,7 +11,7 @@ const AllComponents = () => {
       <Routes>
         <Route path="/" element={<Photography />} />
         <Route path="/gaming" element={<Gaming />} />
-        
+       
       </Routes>
     </div>
   );
