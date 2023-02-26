@@ -57,23 +57,23 @@ const Carousal = () => {
         responsive={responsiveSettings}
       >
         <img
-          style={{ width: "100%" }}
+          style={{ width: "100%", height: "350px" }}
           src="https://www.reliancedigital.in/medias/intranet-Carousal-Banner-Desktop.jpg?context=bWFzdGVyfGltYWdlc3wxMDI1MTN8aW1hZ2UvanBlZ3xpbWFnZXMvaDkzL2hlMC85OTQxNTE2MTU2OTU4LmpwZ3wxMDJmNjQ2YzdjYTIyMzk2NTM5NTMyYjZhNTgyN2M2MjlhMTM3Y2FmNWNhZjAwNzUxY2ExMjg0ZmNhNGMxZjRl"
           alt=""
         />
 
         <img
-          style={{ width: "100%" }}
+          style={{ width: "100%", height: "350px" }}
           src="https://www.reliancedigital.in/medias/Laptops-Carousel-Banner-28-12-2022.jpg?context=bWFzdGVyfGltYWdlc3wxMTQ3MTB8aW1hZ2UvanBlZ3xpbWFnZXMvaDQwL2g3Zi85OTM3ODk0NTcyMDYyLmpwZ3w3NDVjM2RmNWQ4OWQwNzRmYmNjNDQ4MWNkMDE5ZTdkNjRiNmZlMjVlNThkMTBjZTVmZTllOGRmYWNiNDhjNThj"
           alt=""
         />
         <img
-          style={{ width: "100%" }}
+          style={{ width: "100%", height: "350px" }}
           src="https://www.reliancedigital.in/medias/iPhone14-CLP-Banner-18-01-2023.jpg?context=bWFzdGVyfGltYWdlc3wxMDM0MjZ8aW1hZ2UvanBlZ3xpbWFnZXMvaDQ1L2g1MS85OTQ5MjMyODU3MTE4LmpwZ3w3OWFjMWVhZjE0Y2EzNzAyODcyZTBmM2M2MzQ1OTU1YzI2Y2QwYjg4MGYyYTc0NjFmOGNhM2NhYjEyYTk5MTk4"
           alt=""
         />
         <img
-          style={{ width: "100%" }}
+          style={{ width: "100%", height: "350px" }}
           src="https://www.reliancedigital.in/medias/Laptops-Carousel-Banner-28-12-2022.jpg?context=bWFzdGVyfGltYWdlc3wxMTQ3MTB8aW1hZ2UvanBlZ3xpbWFnZXMvaDQwL2g3Zi85OTM3ODk0NTcyMDYyLmpwZ3w3NDVjM2RmNWQ4OWQwNzRmYmNjNDQ4MWNkMDE5ZTdkNjRiNmZlMjVlNThkMTBjZTVmZTllOGRmYWNiNDhjNThj"
           alt=""
         />

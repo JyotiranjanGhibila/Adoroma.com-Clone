@@ -15,13 +15,8 @@ const Home = () => {
   const [render,setRender]=useState(false)
   return (
     <div>
-      
       <Carousel />
-
       <Camera />
-
-     <SearchData/>
-
       <Gaming />
       <Photography />
       <MobileAccessories />
