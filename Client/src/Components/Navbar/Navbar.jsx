@@ -1,5 +1,5 @@
 
-import { ReactNode } from "react";
+
 import {Link} from "react-router-dom"
 
 import {
@@ -7,12 +7,6 @@ import {
   Flex,
   Text,
   HStack,
-
-  Link,
-  
-
-  
-  IconButton,
 
   Button,
   Menu,
@@ -45,9 +39,9 @@ import NavDrawer from "../NavComponents/Drawer";
 import { FcLike } from "react-icons/fc";
 import { FaRegAddressCard } from "react-icons/fa";
 import { BiShoppingBag } from "react-icons/bi";
-import Ads from "../HomeComponents/Ads/Ads";
 
-const Links = ["Dashboard", "Projects", "Team"];
+
+
 
 const NavLink = ({ children }) => (
   <Link

@@ -8,9 +8,7 @@ import Ads from "../../Components/HomeComponents/Ads/Ads";
 
 import { Box, Text } from "@chakra-ui/react";
 
-import { Text } from "@chakra-ui/react";
 
-import Navbar from "../../Components/Navbar/Navbar";
 
 
 import Camera from "../../Components/HomeComponents/ProductCarousels/Camera";
@@ -21,10 +19,6 @@ const Home = () => {
 
       <Carousel />
       <Camera />
-
-    <Carousel/>
-    <Camera/>
-
 
       <Gaming />
       <Photography />
