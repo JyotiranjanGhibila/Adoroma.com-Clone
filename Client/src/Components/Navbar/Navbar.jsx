@@ -33,11 +33,9 @@ import { FcLike } from "react-icons/fc";
 import { FaRegAddressCard } from "react-icons/fa";
 import { BiShoppingBag } from "react-icons/bi";
 
-
-import Ads from "../HomeComponents/Ads/Ads";
 import { useEffect, useState } from "react";
 import SearchData from "../HomeComponents/ProductCarousels/SearchData";
-const Links = ["Dashboard", "Projects", "Team"];
+
 
 
 const NavLink = ({ children }) => (
@@ -60,15 +58,15 @@ export default function Navbar() {
   const [query, setQuery] = useState("");
   const [data, setData] = useState([]);
 
-  // useEffect(() => {
-  //   FetchProduct("")
-  //     .then((res) => {
-  //       setData(res.data);
-  //     })
-  //     .catch((er) => {
-  //       console.log("err:", er);
-  //     });
-  // }, []);
+  useEffect(() => {
+    FetchProduct("")
+      .then((res) => {
+        setData(res.data);
+      })
+      .catch((er) => {
+        console.log("err:", er);
+      });
+  }, []);
 
   
   const handleSearch = () => {
@@ -147,7 +145,7 @@ export default function Navbar() {
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="search"
               />
-              <button onClick={handleSearch}>SEARCH</button>
+             
               <InputRightElement
                 children={<Search2Icon size={"18px"} color={"gray"} />}
               />
@@ -223,34 +221,8 @@ export default function Navbar() {
       <Box display={["none", "none", "none", "block"]}>
         <Dropdown />
       </Box>
-      <Flex
-        alignItems={"center"}
-        background="#002f6c"
-        justifyContent="space-evenly"
-        height={"50px"}
-        display={["block", "block", "none", "none"]}
-      >
-        <InputGroup w={"80%"} margin="auto">
-          <Input
-            placeholder="Search"
-            borderRadius="20px"
-            variant={"none"}
-            height="35px"
-            marginTop={2}
-          />
-          <InputRightElement
-            children={
-              <Search2Icon size={"18px"} color={"gray"} marginTop={2} />
-            }
-          />
-        </InputGroup>
-      </Flex>
-       
-          {
-            data.map((el)=>{
-              return <SearchData key={el.id} img={el.img} title={el.title} brand={el.brand} />
-            })
-          }
+     
+        
        
     </>
   );

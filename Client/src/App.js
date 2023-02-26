@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Home />
     <Allroutes/>
 
     </div>

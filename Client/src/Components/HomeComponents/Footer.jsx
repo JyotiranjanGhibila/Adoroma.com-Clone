@@ -157,7 +157,7 @@ export default function Footer() {
         </Stack>
       </Flex>
       <Box bg={"#002f6c"} color="white">
-        <Container as={Stack} maxW={"7xl"} py={10}>
+        <Container as={Stack} maxW={"6xl"} py={10}>
           <SimpleGrid
             templateColumns={{
               sm: "1fr",
