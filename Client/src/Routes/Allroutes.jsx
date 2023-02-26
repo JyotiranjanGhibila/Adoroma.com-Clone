@@ -7,6 +7,7 @@ import Photography from "../Components/Products/Photography";
 import Admin from "../Components/Admin/sidebar";
 import Home from ".././Pages/Home/Home";
 import Gaming from "../Components/Products/Gaming"
+import Games from "../Pages/Games";
 const Allroutes = () => {
   return (
     <>
@@ -15,7 +16,7 @@ const Allroutes = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/photography" element={<Photography />} />
-
+        <Route path="/games" element={<Games/>}/>
         <Route path="/admin" element={<Admin />} />
         <Route path="/gaming" element={<Gaming />} />
       </Routes>

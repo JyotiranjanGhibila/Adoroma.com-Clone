@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Gaming from "../../Components/HomeComponents/ProductCarousels/Gaming";
 import Footer from "../../Components/HomeComponents/Footer";
@@ -8,17 +8,19 @@ import Ads from "../../Components/HomeComponents/Ads/Ads";
 
 import { Box, Text } from "@chakra-ui/react";
 
-
-
-
 import Camera from "../../Components/HomeComponents/ProductCarousels/Camera";
-import Carousel from "../../Components/HomeComponents/Carousel"
+import Carousel from "../../Components/HomeComponents/Carousel";
+import SearchData from "../../Components/HomeComponents/ProductCarousels/SearchData";
 const Home = () => {
+  const [render,setRender]=useState(false)
   return (
     <div>
-
+      
       <Carousel />
+
       <Camera />
+
+     <SearchData/>
 
       <Gaming />
       <Photography />
