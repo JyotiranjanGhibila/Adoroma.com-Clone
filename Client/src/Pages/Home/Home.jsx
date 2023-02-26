@@ -6,6 +6,9 @@ import MobileAccessories from "../../Components/HomeComponents/ProductCarousels/
 import Photography from "../../Components/HomeComponents/ProductCarousels/Photography";
 import Ads from "../../Components/HomeComponents/Ads/Ads";
 import { Text } from "@chakra-ui/react";
+
+import Navbar from "../../Components/Navbar/Navbar";
+
 import Camera from "../../Components/HomeComponents/ProductCarousels/Camera";
 import Carousel from "../../Components/HomeComponents/Carousel"
 const Home = () => {
@@ -13,6 +16,7 @@ const Home = () => {
     <div>
     <Carousel/>
     <Camera/>
+
       <Gaming />
       <Photography />
       <MobileAccessories />
