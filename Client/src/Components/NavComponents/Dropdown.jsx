@@ -1,7 +1,7 @@
 import { Box, Flex, Grid, GridItem, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import { BiChevronDown } from "react-icons/bi";
-import { a, Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 import "./dropdown.css";
 
 const Dropdown = () => {
@@ -38,9 +38,11 @@ const Dropdown = () => {
                       pt={4}
                     >
                       <Box >
+                        <Link to='/photography'>
                         <Text fontWeight={"semibold"} fontSize={"16px"}>
                           Camera
                         </Text>
+                        </Link>
                         <Text pt={6} pb={6} fontWeight={"semibold"}>
                           Lenses
                         </Text>
@@ -137,6 +139,7 @@ const Dropdown = () => {
                       </Box>
 
                       <Box>
+                       
                         <Text fontWeight={"semibold"} fontSize={"16px"}>
                           Gaming
                         </Text>

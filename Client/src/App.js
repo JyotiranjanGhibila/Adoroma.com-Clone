@@ -1,27 +1,22 @@
-import AllComponents from "./Components/AllComponents";
 
-import CartScreen from "./Components/CartScreen/CartScreen";
-import CartAddress from "./Components/Checkout/Checkout";
-import Payment from "./Components/Payment/Payment";
+
 
 
 import "./App.css";
-import MainRoutes from "./Pages/MainRoutes";
+import Navbar from "./Components/Navbar/Navbar";
+import Allroutes from "./Routes/Allroutes";
 
 
 function App() {
   return (
     <div className="App">
 
-      {/* <Navbar /> */}
-      {/* <AddToCartButton /> */}
-      {/* <CartScreen /> */}
-      {/* <AllComponents/> */}
-      {/* <CartAddress /> */}
-      <Payment/>
+      <Navbar/>
+      <Allroutes/>
 
-      {/* <AllComponents /> */}
-      <MainRoutes/>
+
+    
+    
 
     </div>
   );
