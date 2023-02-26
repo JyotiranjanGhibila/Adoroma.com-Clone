@@ -1,4 +1,4 @@
-import { Heading } from "@chakra-ui/react";
+import { Badge, Heading } from "@chakra-ui/react";
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
@@ -137,13 +137,14 @@ const Gaming = () => {
         slidesToShow={3}
         responsive={responsiveSettings}
       >
-        {data.map((el) => (
+        {data.map((el,i) => (
           <Flex
             p={2}
             w="full"
             alignItems="center"
             justifyContent="center"
             className="myDiv"
+            key={i}
           >
             <Box
               maxW="sm"
@@ -152,16 +153,6 @@ const Gaming = () => {
               shadow="lg"
               position="relative"
             >
-              {el.isNew && (
-                <Circle
-                  size="10px"
-                  position="absolute"
-                  top={2}
-                  right={2}
-                  bg="red.200"
-                />
-              )}
-
               <Image
                 src={el.imageURL}
                 alt={`Picture of ${el.name}`}
@@ -187,18 +178,19 @@ const Gaming = () => {
                 </Flex>
                 <Flex justifyContent="center" alignContent="center">
                   <Box fontSize="md">
-                    <Box as="span" color={"gray.600"} fontSize="md" margin={1}>
+                    <Box as="span" color={"gray.600"} fontSize="sm" margin={1}>
                       <strike> {`Regular Price: $${el.price * 1.5}.00`}</strike>
                     </Box>
                   </Box>
                 </Flex>
                 <Flex justifyContent="center" alignContent="center">
                   <Box fontSize="md">
-                    <Box as="span" color={"gray.600"} fontSize="md" margin={1}>
+                    <Box as="span" color={"gray.600"} fontSize="sm" margin={1}>
                       {`Instant Rebate: $${el.price / 2}.00`}
                     </Box>
                   </Box>
                 </Flex>
+<<<<<<< HEAD
                 <Flex
                   mt="1"
                   justifyContent="center"
@@ -211,6 +203,12 @@ const Gaming = () => {
                       size={24}
                       color1={"#ffd700"}
                     />
+=======
+
+                <Flex mt="1" justifyContent="center" alignContent="center">
+                  <Box fontSize="md" lineHeight="tight" margin={1}>
+                    <ReactStars count={el.rating} color1={"#ffd700"} />
+>>>>>>> 41390e3b1630bde987ec6d8e2e55f0b4f6675060
                   </Box>
                 </Flex>
                 <Flex justifyContent="center" alignContent="center">
@@ -233,8 +231,13 @@ const Gaming = () => {
                   </Box>
                 </Flex>
 
+<<<<<<< HEAD
                 <Box className="hide" margin="auto">
                   <AddtoCartModal data={data} />
+=======
+                <Box className="hide" margin="auto" width="fit-content">
+                  <AddtoCartModal />
+>>>>>>> 41390e3b1630bde987ec6d8e2e55f0b4f6675060
                 </Box>
               </Box>
             </Box>

@@ -5,8 +5,10 @@ const SortBar = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const initialState = searchParams.getAll("category");
+  const initialOrder = searchParams.get("order");
   const [category, setCategory] = useState(initialState || []);
 
+  const [order, setOrder] = useState(initialOrder || "");
   const handleFilter = (e) => {
     let newCategory = [...category];
     if (newCategory.includes(e.target.value)) {
@@ -17,14 +19,20 @@ const SortBar = () => {
     setCategory(newCategory);
   };
   // console.log(category)
-  console.log(searchParams);
+  // console.log(searchParams);
+  console.log(order);
+  const handleSort = (e) => {
+    setOrder(e.target.value);
+    console.log(order);
+  };
 
   useEffect(() => {
     const params = {
       category,
     };
+    order && (params.order = order);
     setSearchParams(params);
-  }, [category]);
+  }, [category, order]);
   return (
     <div>
       <h3>Filter By</h3>
@@ -63,6 +71,23 @@ const SortBar = () => {
           checked={category.includes("pcgames")}
         />
         <label>Gaming PCs</label>
+      </div>
+      <h3>Sort By Order</h3>
+      <div onChange={handleSort}>
+        <input
+          type="radio"
+          name="sort_by"
+          value={"asc"}
+          defaultChecked={order === "asc"}
+        />
+        <label>Ascending</label>
+        <input
+          type="radio"
+          name="sort_by"
+          value={"desc"}
+          defaultChecked={order === "desc"}
+        />
+        <label>Descending</label>
       </div>
     </div>
   );
