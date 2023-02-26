@@ -11,12 +11,15 @@ const GameList = () => {
   const location=useLocation()
   const [searchParams]=useSearchParams()
 
-  console.log(location)
+  // console.log(location)
   
   useEffect(()=>{
+    const order=searchParams.get('order')
     let paramObj={
-      params:{
-        category:searchParams.getAll('category')
+      params:{ 
+        category:searchParams.getAll('category'),
+        _sort: order && "price",
+        _order: order,
       }
     }
    dispatch(getGames(paramObj))
