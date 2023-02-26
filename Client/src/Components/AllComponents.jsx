@@ -1,20 +1,9 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-
-import Photography from "../Components/Products/Photography";
-import GameCard from "./Products/GameCard";
-import Gaming from "./Products/Gaming";
+import React from 'react'
 
 const AllComponents = () => {
   return (
-    <div>
-      <Routes>
-        <Route path="/" element={<Photography />} />
-        <Route path="/gaming" element={<Gaming />} />
-       
-      </Routes>
-    </div>
-  );
-};
+    <div>AllComponents</div>
+  )
+}
 
-export default AllComponents;
+export default AllComponents

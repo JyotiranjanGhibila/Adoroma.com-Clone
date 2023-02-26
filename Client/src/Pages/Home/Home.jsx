@@ -6,10 +6,12 @@ import MobileAccessories from "../../Components/HomeComponents/ProductCarousels/
 import Photography from "../../Components/HomeComponents/ProductCarousels/Photography";
 import Ads from "../../Components/HomeComponents/Ads/Ads";
 import { Text } from "@chakra-ui/react";
+import Navbar from "../../Components/Navbar/Navbar";
 
 const Home = () => {
   return (
     <div>
+      
       <Gaming />
       <Photography />
       <MobileAccessories />

@@ -1,13 +1,14 @@
-import AllComponents from "./Components/AllComponents";
+
 
 import "./App.css";
-import MainRoutes from "./Pages/MainRoutes";
+import Navbar from "./Components/Navbar/Navbar";
+import Allroutes from "./Routes/Allroutes";
 
 function App() {
   return (
     <div className="App">
-      {/* <AllComponents /> */}
-      <MainRoutes/>
+      <Navbar/>
+      <Allroutes/>
     </div>
   );
 }
