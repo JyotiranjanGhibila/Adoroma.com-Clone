@@ -1,8 +1,28 @@
-import { Box, Flex, Grid, GridItem, Image, Text } from "@chakra-ui/react";
+import { Box, Flex, Grid, GridItem, Image, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import { BiChevronDown } from "react-icons/bi";
 import {Link } from "react-router-dom";
 import "./dropdown.css";
+
+ const brandsArr = [
+   "https://www.adorama.com/col/header-21/prod/brands/brand-image-1.png",
+   "https://www.adorama.com/col/header-21/prod/brands/brand-image-2.png",
+   "https://www.adorama.com/col/header-21/prod/brands/brand-image-3.png",
+   "https://www.adorama.com/col/header-21/prod/brands/brand-image-4.png",
+   "https://www.adorama.com/col/header-21/prod/brands/brand-image-5.png",
+   "https://www.adorama.com/col/header-21/prod/brands/brand-image-6.png",
+   "https://www.adorama.com/col/header-21/prod/brands/brand-image-7.png",
+   "https://www.adorama.com/col/header-21/prod/brands/brand-image-8.png",
+   "https://www.adorama.com/col/header-21/prod/brands/brand-image-9.png",
+   "https://www.adorama.com/col/header-21/prod/brands/brand-image-10.png",
+   "https://www.adorama.com/col/header-21/prod/brands/brand-image-11.png",
+   "https://www.adorama.com/col/header-21/prod/brands/brand-image-12.png",
+   "https://www.adorama.com/col/header-21/prod/brands/brand-image-18.png",
+   "https://www.adorama.com/col/header-21/prod/brands/brand-image-14.png",
+   "https://www.adorama.com/col/header-21/prod/brands/brand-image-15.png",
+   "https://www.adorama.com/col/header-21/prod/brands/brand-image-17.png",
+ ];
+
 
 const Dropdown = () => {
   return (
@@ -19,24 +39,24 @@ const Dropdown = () => {
         pl={[0, 0, 0, 4, 4]}
         pr={[0, 0, 0, 4, 4]}
         fontSize={["13px", "13px", "13px", "16px"]}
-       
       >
         <Flex width="400px" justify={"space-between"}>
           <Flex alignItems="center">
-            <div class="dropdown">
+            <div className="dropdown">
               <a to="">
-                <button class="dropbtn" style={{ fontSize: "16px" }}>
+                <button className="dropbtn" style={{ fontSize: "16px" }}>
                   Products
                 </button>
               </a>
-              <div class="dropdown-content">
-                <div class="row">
-                  <div class="column">
+              <div className="dropdown-content">
+                <div className="row">
+                  <div className="column">
                     <Box
                       style={{ display: "flex", gap: "50px" }}
                       pl={10}
                       pt={4}
                     >
+
                       <Box >
                         <Link to='/photography'>
                         <Text fontWeight={"semibold"} fontSize={"16px"}>
@@ -50,46 +70,126 @@ const Dropdown = () => {
                           Tripods and supports
                         </Text>
                       </Box>
-                      <Box>
-                        <Text fontWeight={"semibold"} fontSize={"16px"}>
-                          Headphones & Headsets
-                        </Text>
-                        <Text
-                          fontWeight={"semibold"}
-                          fontSize={"16px"}
-                          pt={6}
-                          pb={6}
-                        >
-                          Tablets & eReaders
-                        </Text>
-                        <Text fontSize={"14px"} mt={2}>
-                          Every Day use Tablets below 15000
-                        </Text>
-                        <Text fontSize={"14px"} mt={2}>
-                          Premium Tablets, above 15001
-                        </Text>
-                        <Text
-                          fontWeight={"semibold"}
-                          fontSize={"16px"}
-                          pt={6}
-                          pb={6}
-                        >
-                          Power Banks
-                        </Text>
-                      </Box>
 
                       <Box>
-                        <Text fontWeight={"semibold"} fontSize={"16px"}>
-                          AI Learning Robots
-                        </Text>
-                      </Box>
+                        <Stack>
+                          <Text fontWeight={"semibold"} fontSize={"16px"}>
+                            Camera
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Mirrorless Cameras
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Digital SLR Cameras
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Digital Point & Shoot Cameras
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Medium Format Cameras
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Instant Cameras
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Specialty Cameras
+                          </Text>
+                        </Stack>
 
+                        <Stack pt={6} pb={6}>
+                          <Text fontWeight={"semibold"} fontSize={"16px"}>
+                            Light Stands & Mounting
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Light Booms & Stands
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Grips, Clamps & Arms
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Trussing Equipment Railing
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Hardware Umbrella Mounts
+                          </Text>
+                        </Stack>
+                      </Box>
+                      <Box>
+                        <Stack pb={6}>
+                          <Text fontWeight={"semibold"} fontSize={"16px"}>
+                            Headphones & Earphones
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Wireless & Bluetooth Headphones
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Earphones & Earbuds Headphones
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            DJ & Studio Headphones
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Computer & Gaming Headsets
+                          </Text>
+                        </Stack>
+
+                        <Stack>
+                          <Text fontWeight={"semibold"} fontSize={"16px"}>
+                            PlayStation
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            PlayStation Consoles
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            PlayStation Games
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            PlayStation Accessories
+                          </Text>
+                        </Stack>
+                      </Box>
+                      <Box>
+                        <Stack>
+                          <Text fontWeight={"semibold"} fontSize={"16px"}>
+                            Desktop Computers
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            All in One PCs
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Apple Desktops
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Barebone PCs Desktops
+                          </Text>
+                        </Stack>
+
+                        <Stack>
+                          <Text fontWeight={"semibold"} fontSize={"16px"}>
+                            Drone Accessories
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Drone Lighting
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Propellers & Guards
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Replacement Parts
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Lens Filters
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Landing Gear
+                          </Text>
+                        </Stack>
+                      </Box>
                       <Box>
                         <Image
-                          mb={-2}
-                          ml={14}
-                          width="95%"
-                          src="https://i.ibb.co/8D0JyY3/tablet-nav1.jpg"
+                          ml={12}
+                          height="380px"
+                          src="https://images.unsplash.com/photo-1607462109225-6b64ae2dd3cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVqaWZpbG0lMjBjYW1lcmF8ZW58MHx8MHx8&w=1000&q=80"
                           alt="image"
                         />
                       </Box>
@@ -102,15 +202,15 @@ const Dropdown = () => {
           </Flex>
 
           <Flex alignItems="center">
-            <div class="dropdown">
+            <div className="dropdown">
               <a to="/televisions">
-                <button class="dropbtn" style={{ fontSize: "16px" }}>
+                <button className="dropbtn" style={{ fontSize: "16px" }}>
                   Brands
                 </button>
               </a>
-              <div class="dropdown-content">
-                <div class="row">
-                  <div class="column">
+              <div className="dropdown-content">
+                <div className="row">
+                  <div className="column">
                     <Box
                       style={{ display: "flex", gap: "50px" }}
                       pl={10}
@@ -118,25 +218,16 @@ const Dropdown = () => {
                       pb={6}
                     >
                       <Box>
-                        <Text fontWeight={"semibold"} fontSize={"16px"}>
-                          Televisions
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Smart TV's
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          32 Inch Tv's
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          43 Inc TV's
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          55 Inch TV's
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Android TV's
-                        </Text>
+                        <SimpleGrid columns={[2, 4, 4]} spacing="10px">
+                          {brandsArr.map((el,i) => (
+                            <Box border={"1px solid silver"} width={"150px"} key={i}>
+                              {" "}
+                              <Image src={el} width={"100%"} padding={"10px"} />
+                            </Box>
+                          ))}
+                        </SimpleGrid>
                       </Box>
+
 
                       <Box>
                        
@@ -160,19 +251,14 @@ const Dropdown = () => {
                         </Text>
                       </Box>
 
+
                       <Box>
-                        <Text fontWeight={"semibold"} fontSize={"16px"}>
-                          Reconnect Disney | Marvel Audio Collections
-                        </Text>
-                        <Text fontWeight={"semibold"} fontSize={"16px"}>
-                          TV & Audio Accessiories
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Vertual Reality Headsets
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Stablizers & Surge Protections
-                        </Text>
+                        <Image
+                          ml={12}
+                          height="450px"
+                          src="https://images.unsplash.com/photo-1613047503507-b8d01ce6af26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG9ncmFwaHklMjBjYW1lcmF8ZW58MHx8MHx8&w=1000&q=80"
+                          alt="image"
+                        />
                       </Box>
                     </Box>
                   </div>
@@ -183,15 +269,15 @@ const Dropdown = () => {
           </Flex>
 
           <Flex alignItems="center">
-            <div class="dropdown">
+            <div className="dropdown">
               <a to="">
-                <button class="dropbtn" style={{ fontSize: "16px" }}>
+                <button className="dropbtn" style={{ fontSize: "16px" }}>
                   Used
                 </button>
               </a>
-              <div class="dropdown-content">
-                <div class="row">
-                  <div class="column">
+              <div className="dropdown-content">
+                <div className="row">
+                  <div className="column">
                     <Box
                       style={{ display: "flex", gap: "50px" }}
                       pl={10}
@@ -199,72 +285,153 @@ const Dropdown = () => {
                       pb={6}
                     >
                       <Box>
-                        <Text fontWeight={"semibold"} fontSize={"16px"}>
-                          Headphones & Headsets
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          True Wireless
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Bluetooth Nechbands
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Wired Earphones
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          On Ear Headphones
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Hoise Cancellling Headphones
-                        </Text>
+                        <Stack>
+                          <Text fontWeight={"semibold"} fontSize={"16px"}>
+                            Photography
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Lighting & Studio
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Tripods & Supports
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Camera Accessories
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Medium Format Cameras
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Bags & Cases
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Mobile Photography
+                          </Text>
+                        </Stack>
+
+                        <Stack pt={6} pb={6}>
+                          <Text fontWeight={"semibold"} fontSize={"16px"}>
+                            Light Stands & Mounting
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Light Booms & Stands
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Grips, Clamps & Arms
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Trussing Equipment Railing
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Hardware Umbrella Mounts
+                          </Text>
+                        </Stack>
+                      </Box>
+                      <Box>
+                        <Stack pb={6}>
+                          <Text fontWeight={"semibold"} fontSize={"16px"}>
+                            Headphones & Earphones
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Wireless & Bluetooth Headphones
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Earphones & Earbuds Headphones
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            DJ & Studio Headphones
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Computer & Gaming Headsets
+                          </Text>
+                        </Stack>
+
+                        <Stack>
+                          <Text fontWeight={"semibold"} fontSize={"16px"}>
+                            PlayStation
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            PlayStation Consoles
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            PlayStation Games
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            PlayStation Accessories
+                          </Text>
+                        </Stack>
+                      </Box>
+                      <Box>
+                        <Stack>
+                          <Text fontWeight={"semibold"} fontSize={"16px"}>
+                            Desktop Computers
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            All in One PCs
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Apple Desktops
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Barebone PCs Desktops
+                          </Text>
+                        </Stack>
+
+                        <Stack>
+                          <Text fontWeight={"semibold"} fontSize={"16px"}>
+                            Drone Accessories
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Drone Lighting
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Propellers & Guards
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Replacement Parts
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Lens Filters
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Landing Gear
+                          </Text>
+                        </Stack>
                       </Box>
 
                       <Box>
-                        <Text fontWeight={"semibold"} fontSize={"16px"}>
-                          Bluetooth & WiFi Speakers
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Blueetooth Speakers
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Smart Speakers
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Gaming Titles
-                        </Text>
-                      </Box>
-
-                      <Box>
-                        <Text fontWeight={"semibold"} fontSize={"16px"}>
-                          TV Speakers & Soundbars
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Soundbars
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Home Theatre System
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Party Speakers
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Multimedia
-                        </Text>
-                      </Box>
-
-                      <Box>
-                        <Text fontWeight={"semibold"} fontSize={"16px"}>
-                          Musical Insturments
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Guitars and Ukuleses
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Microphones
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Musical Keyboards
-                        </Text>
+                        <Stack pb={6}>
+                          <Text fontWeight={"semibold"} fontSize={"16px"}>
+                            Computers
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Laptops & Notebook
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Computers
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Computer Monitors & Mounts
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Digital Storage & Duplication
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Desktop Computers
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            iPads & Tablets
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Drives, SSD & Storage
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Computer Accessories
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Computer Components
+                          </Text>
+                        </Stack>
                       </Box>
                     </Box>
                   </div>
@@ -275,15 +442,15 @@ const Dropdown = () => {
           </Flex>
 
           <Flex alignItems="center">
-            <div class="dropdown">
+            <div className="dropdown">
               <a to="">
-                <button class="dropbtn" style={{ fontSize: "16px" }}>
+                <button className="dropbtn" style={{ fontSize: "16px" }}>
                   Deals
                 </button>
               </a>
-              <div class="dropdown-content">
-                <div class="row">
-                  <div class="column">
+              <div className="dropdown-content">
+                <div className="row">
+                  <div className="column">
                     <Box
                       style={{ display: "flex", gap: "50px" }}
                       pl={10}
@@ -291,91 +458,120 @@ const Dropdown = () => {
                       pb={6}
                     >
                       <Box>
-                        <Text fontWeight={"semibold"} fontSize={"16px"}>
-                          Air conditioners
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Split Air Conditions
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Window Air Conditions
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Smart Air Conditions
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Energy Efficient Air Conditions
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          1 ton Air Conditions
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          1.5 ton Air Conditions
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          5 ton Air Conditions
-                        </Text>
-                        <Text fontWeight={"semibold"} mt={4} fontSize={"16px"}>
-                          Air Cooler
-                        </Text>
-                        <Text fontWeight={"semibold"} mt={4} fontSize={"16px"}>
-                          Air Purifier
-                        </Text>
+                        <Stack>
+                          <Text fontWeight={"semibold"} fontSize={"16px"}>
+                            Photography
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Lighting & Studio
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Tripods & Supports
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Camera Accessories
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Medium Format Cameras
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Bags & Cases
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Mobile Photography
+                          </Text>
+                        </Stack>
+                        <Box>
+                          <Stack pb={6} pt={4}>
+                            <Text fontWeight={"semibold"} fontSize={"16px"}>
+                              Computers
+                            </Text>
+                            <Text fontSize={"small"} id="menuSunLinksColor">
+                              Laptops & Notebook
+                            </Text>
+                            <Text fontSize={"small"} id="menuSunLinksColor">
+                              Computers
+                            </Text>
+                            <Text fontSize={"small"} id="menuSunLinksColor">
+                              Computer Monitors & Mounts
+                            </Text>
+                            <Text fontSize={"small"} id="menuSunLinksColor">
+                              Digital Storage & Duplication
+                            </Text>
+                            <Text fontSize={"small"} id="menuSunLinksColor">
+                              Desktop Computers
+                            </Text>
+                            <Text fontSize={"small"} id="menuSunLinksColor">
+                              iPads & Tablets
+                            </Text>
+                            <Text fontSize={"small"} id="menuSunLinksColor">
+                              Drives, SSD & Storage
+                            </Text>
+                            <Text fontSize={"small"} id="menuSunLinksColor">
+                              Computer Accessories
+                            </Text>
+                            <Text fontSize={"small"} id="menuSunLinksColor">
+                              Computer Components
+                            </Text>
+                          </Stack>
+                        </Box>
                       </Box>
-
                       <Box>
-                        <Text fontWeight={"semibold"} fontSize={"16px"}>
-                          Washing Machines
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Fully Automatic Front Load
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Fully Automatic Top Load
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Semi-Automatic Top Load
-                        </Text>
-                        <Text fontWeight={"semibold"} fontSize={"16px"} mt={4}>
-                          Refrigerator
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Single Door
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Double Door
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Side by Side Refrigerator
-                        </Text>
-                        <Text fontSize={"14px"} mt={3}>
-                          Convertible
-                        </Text>
+                        <Stack pb={6}>
+                          <Text fontWeight={"semibold"} fontSize={"16px"}>
+                            Drone Accessories
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Drone Lighting
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Propellers & Guards
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Replacement Parts
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Lens Filters
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Landing Gear
+                          </Text>
+                        </Stack>
+                        <Stack pb={6} pt={4}>
+                          <Text fontWeight={"semibold"} fontSize={"16px"}>
+                            Desktop Computers
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            All in One PCs
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Apple Desktops
+                          </Text>
+                          <Text fontSize={"small"} id="menuSunLinksColor">
+                            Barebone PCs Desktops
+                          </Text>
+                        </Stack>
                       </Box>
-
-                      <Box>
+                    </Box>
+                    <Box>
+                      {" "}
+                      <Stack pt={6} pb={6}>
                         <Text fontWeight={"semibold"} fontSize={"16px"}>
-                          Vacuum Cleaners
+                          Light Stands & Mounting
                         </Text>
-                        <Text fontWeight={"semibold"} fontSize={"16px"} mt={4}>
-                          Robotic Vacuum Cleaners
+                        <Text fontSize={"small"} id="menuSunLinksColor">
+                          Light Booms & Stands
                         </Text>
-                        <Text fontWeight={"semibold"} fontSize={"16px"} mt={4}>
-                          Dishwashers
+                        <Text fontSize={"small"} id="menuSunLinksColor">
+                          Grips, Clamps & Arms
                         </Text>
-                        <Text fontWeight={"semibold"} fontSize={"16px"} mt={4}>
-                          FAns
+                        <Text fontSize={"small"} id="menuSunLinksColor">
+                          Trussing Equipment Railing
                         </Text>
-                        <Text fontWeight={"semibold"} fontSize={"16px"} mt={4}>
-                          Cloth Dryers
+                        <Text fontSize={"small"} id="menuSunLinksColor">
+                          Hardware Umbrella Mounts
                         </Text>
-                        <Text fontWeight={"semibold"} fontSize={"16px"} mt={4}>
-                          Geysers
-                        </Text>
-                        <Text fontWeight={"semibold"} fontSize={"16px"} mt={4}>
-                          Room Heater
-                        </Text>
-                      </Box>
+                      </Stack>
                     </Box>
                   </div>
                 </div>
