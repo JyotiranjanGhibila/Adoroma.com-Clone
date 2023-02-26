@@ -1,18 +1,10 @@
-
-import { ReactNode } from "react";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 import {
   Box,
   Flex,
   Text,
   HStack,
-
-  Link,
-  
-
-  
-  IconButton,
 
   Button,
   Menu,
@@ -22,31 +14,23 @@ import {
   MenuDivider,
   useDisclosure,
   useColorModeValue,
-  
   InputGroup,
   InputRightElement,
   Input,
   Grid,
-  
 } from "@chakra-ui/react";
-import {
-  
-  ChevronDownIcon,
-  Search2Icon,
-} from "@chakra-ui/icons";
+import { ChevronDownIcon, Search2Icon } from "@chakra-ui/icons";
 import { BsCart, BsPerson } from "react-icons/bs";
-
-import {
-  AiFillGift,
-  
-} from "react-icons/ai";
+import FetchProduct from "./FetchProduct";
+import { AiFillGift } from "react-icons/ai";
 import Dropdown from "../NavComponents/Dropdown";
 import NavDrawer from "../NavComponents/Drawer";
 import { FcLike } from "react-icons/fc";
 import { FaRegAddressCard } from "react-icons/fa";
 import { BiShoppingBag } from "react-icons/bi";
 import Ads from "../HomeComponents/Ads/Ads";
-
+import { useEffect, useState } from "react";
+import SearchData from "../HomeComponents/ProductCarousels/SearchData";
 const Links = ["Dashboard", "Projects", "Team"];
 
 const NavLink = ({ children }) => (
@@ -66,7 +50,31 @@ const NavLink = ({ children }) => (
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const [query, setQuery] = useState("");
+  const [data, setData] = useState([]);
 
+  // useEffect(() => {
+  //   FetchProduct("")
+  //     .then((res) => {
+  //       setData(res.data);
+  //     })
+  //     .catch((er) => {
+  //       console.log("err:", er);
+  //     });
+  // }, []);
+
+  
+  const handleSearch = () => {
+    FetchProduct(query)
+      .then((res) => {
+        setData(res.data);
+      })
+      .catch((err) => {
+        console.log("err:", err);
+      });
+     
+  };
+  // console.log(data)
   return (
     <>
       <Flex
@@ -123,12 +131,16 @@ export default function Navbar() {
               marginRight="40px"
             >
               <Input
-                placeholder="Search"
+              
                 borderRadius="20px"
                 variant={"none"}
                 height="35px"
                 color="black"
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                placeholder="search"
               />
+              <button onClick={handleSearch}>SEARCH</button>
               <InputRightElement
                 children={<Search2Icon size={"18px"} color={"gray"} />}
               />
@@ -140,7 +152,7 @@ export default function Navbar() {
                 alignItems="center"
                 textAlign={"center"}
               >
-                <BsPerson size={"30px"}  />
+                <BsPerson size={"30px"} />
                 <Box
                   lineHeight={1}
                   textAlign="center"
@@ -151,17 +163,15 @@ export default function Navbar() {
                   <p style={{ marginRight: "60px" }}> Hi,Braj</p>
                   <Menu>
                     <Link to="/login">
-                    <MenuButton
-                      as={Button}
-                      bg="none"
-                      height="fit-content"
-                      width={"max-content"}
-                      rightIcon={<ChevronDownIcon />}
-                    >
-                    
-                      My Account
-                    
-                    </MenuButton>
+                      <MenuButton
+                        as={Button}
+                        bg="none"
+                        height="fit-content"
+                        width={"max-content"}
+                        rightIcon={<ChevronDownIcon />}
+                      >
+                        My Account
+                      </MenuButton>
                     </Link>
                     <MenuList textColor="black" padding={"10px"}>
                       <MenuItem>
@@ -228,7 +238,13 @@ export default function Navbar() {
           />
         </InputGroup>
       </Flex>
-      
+       
+          {
+            data.map((el)=>{
+              return <SearchData key={el.id} img={el.img} title={el.title} brand={el.brand} />
+            })
+          }
+       
     </>
   );
 }
