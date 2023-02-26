@@ -24,8 +24,14 @@ code {
 }
 .hide{
   display: none;
+  
 }
 .myDiv:hover .hide {
   display: block;
   color: red;
+  
+}
+
+#menuSunLinksColor{
+  color: blue
 }

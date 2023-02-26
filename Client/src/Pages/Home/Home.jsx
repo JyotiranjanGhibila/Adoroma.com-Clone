@@ -5,21 +5,21 @@ import Footer from "../../Components/HomeComponents/Footer";
 import MobileAccessories from "../../Components/HomeComponents/ProductCarousels/MobileAccessories";
 import Photography from "../../Components/HomeComponents/ProductCarousels/Photography";
 import Ads from "../../Components/HomeComponents/Ads/Ads";
-import { Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import Camera from "../../Components/HomeComponents/ProductCarousels/Camera";
 import Carousel from "../../Components/HomeComponents/Carousel"
 const Home = () => {
   return (
     <div>
-    <Carousel/>
-    <Camera/>
+      <Carousel />
+      <Camera />
       <Gaming />
       <Photography />
       <MobileAccessories />
       <hr />
       <Ads />
-      <div Style={"padding:4rem"}>
-        <Text fontSize="3xl" margin={"1rem"}>
+      <Box width={"95%"} padding={"20px"} margin="auto">
+        <Text fontSize="3xl" textAlign={"center"} margin="1rem">
           Photography Equipment, Video Gear, and Electronics
         </Text>
         <Text>
@@ -33,7 +33,7 @@ const Home = () => {
           for the latest in smart tech, gaming, drones, musical instruments and
           recording studio gear.
         </Text>
-        <Text fontSize="3xl" margin={"1rem"}>
+        <Text fontSize="3xl" textAlign={"center"} margin="1rem">
           Exclusive Savings All Year Long
         </Text>
         <Text>
@@ -41,7 +41,7 @@ const Home = () => {
           on top products from industry leading brands, browse Deals, Used, Deal
           Of The Day, only at Adorama.
         </Text>
-      </div>
+      </Box>
 
       <br />
       <br />

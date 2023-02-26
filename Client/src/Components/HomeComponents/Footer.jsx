@@ -32,7 +32,7 @@ import { BsChat,  BsTelephone } from "react-icons/bs";
 import { RiCustomerService2Line } from "react-icons/ri";
 import { GrLocation } from "react-icons/gr";
 
-const Logo = (props: any) => {
+const Logo = (props) => {
   return (
     <svg
       height={32}
@@ -56,10 +56,6 @@ const SocialButton = ({
   children,
   label,
   href,
-}: {
-  children: ReactNode,
-  label: string,
-  href: string,
 }) => {
   return (
     <chakra.button
@@ -84,7 +80,7 @@ const SocialButton = ({
   );
 };
 
-const ListHeader = ({ children }: { children: ReactNode }) => {
+const ListHeader = ({ children }) => {
   const [show, setShow] = React.useState(false);
   const handleClick = () => setShow(!show);
   return (
@@ -98,8 +94,8 @@ export default function Footer() {
   return (
     <>
     
-      <Flex justifyContent={"space-evenly"} alignItems={"center"}  bg="gray.200" height={"min-content"} flexWrap="wrap" padding={"40px"}>
-        <Stack width="260px">
+      <Flex justifyContent={"space-evenly"} alignItems={"center"}  bg="gray.200" height={"min-content"} flexWrap="wrap" padding={"40px"} textAlign="center">
+        <Stack width="260px" >
           <Box
             border={"1px solid silver"}
             padding="25px"

@@ -1,11 +1,11 @@
-import { ReactNode } from "react";
+
 import {
   Box,
   Flex,
   Text,
   HStack,
   Link,
-  IconButton,
+  
   Button,
   Menu,
   MenuButton,
@@ -14,17 +14,15 @@ import {
   MenuDivider,
   useDisclosure,
   useColorModeValue,
-  Stack,
-  InputLeftElement,
+  
   InputGroup,
   InputRightElement,
   Input,
   Grid,
-  StackItem,
+  
 } from "@chakra-ui/react";
 import {
-  HamburgerIcon,
-  CloseIcon,
+  
   ChevronDownIcon,
   Search2Icon,
 } from "@chakra-ui/icons";
@@ -32,9 +30,7 @@ import { BsCart, BsPerson } from "react-icons/bs";
 
 import {
   AiFillGift,
-  AiFillLike,
-  AiOutlineLike,
-  AiOutlineTrademarkCircle,
+  
 } from "react-icons/ai";
 import Dropdown from "../NavComponents/Dropdown";
 import NavDrawer from "../NavComponents/Drawer";
@@ -44,7 +40,7 @@ import { BiShoppingBag } from "react-icons/bi";
 
 const Links = ["Dashboard", "Projects", "Team"];
 
-const NavLink = ({ children }: { children: ReactNode }) => (
+const NavLink = ({ children }) => (
   <Link
     px={2}
     py={1}
@@ -103,7 +99,7 @@ export default function Navbar() {
               <NavDrawer />
             </Grid>
 
-            <Box fontSize={["xl", "2xl", "4xl", "4xl"]} fontFamily="red serifs">
+            <Box fontSize={["xl", "2xl", "4xl", "4xl"]} fontFamily="cursive">
               ElectroGlad
             </Box>
           </HStack>
@@ -135,7 +131,7 @@ export default function Navbar() {
                 alignItems="center"
                 textAlign={"center"}
               >
-                <BsPerson size={"30px"} marginRight="-10px" />
+                <BsPerson size={"30px"}  />
                 <Box
                   lineHeight={1}
                   textAlign="center"
