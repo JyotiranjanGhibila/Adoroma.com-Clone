@@ -97,14 +97,15 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
 export default function Footer() {
   return (
     <>
-      <Flex justifyContent={"space-evenly"}  bg="gray.200" height={"300px"}>
+    
+      <Flex justifyContent={"space-evenly"} alignItems={"center"}  bg="gray.200" height={"min-content"} flexWrap="wrap" padding={"40px"}>
         <Stack width="260px">
           <Box
             border={"1px solid silver"}
             padding="25px"
             borderRadius={"50%"}
             margin="auto"
-          >
+          > 
             <BsTelephone size={"40px"} />
           </Box>
           <Text fontSize={"2xl"} fontWeight="bold">
@@ -160,12 +161,12 @@ export default function Footer() {
         </Stack>
       </Flex>
       <Box bg={"#002f6c"} color="white">
-        <Container as={Stack} maxW={"6xl"} py={10}>
+        <Container as={Stack} maxW={"7xl"} py={10}>
           <SimpleGrid
             templateColumns={{
               sm: "1fr",
               md: "1fr 1fr ",
-              lg: "1fr 1fr 1fr 2fr",
+              lg: "1fr 1fr 1fr 1.5fr",
             }}
             spacing={8}
             textAlign="center"
