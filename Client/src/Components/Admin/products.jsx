@@ -23,7 +23,7 @@ const ProductList = ({ apiUrl }) => {
     })
     .then((res) => res.json())
     .then((res) => {
-      console.log(res);
+      
       // eslint-disable-next-line no-restricted-globals
       location.reload();
     })
@@ -60,7 +60,7 @@ const ProductList = ({ apiUrl }) => {
     })
     .then((res) => res.json())
     .then((res) => {
-      console.log(res);
+      
       // eslint-disable-next-line no-restricted-globals
       location.reload();
     })
@@ -75,7 +75,7 @@ const ProductList = ({ apiUrl }) => {
       <div className="product-list">
 
       {products.map((product) => (
-        <div className="product-item" key={product.id}>
+        <div className="product-item" key={product._id}>
           <div className="product-image">
             <img src={product.img} alt={product.title} />
           </div>

@@ -19,7 +19,9 @@ const Home = () => {
       <Carousel />
 
       <Camera />
+
      <SearchData/>
+
       <Gaming />
       <Photography />
       <MobileAccessories />
