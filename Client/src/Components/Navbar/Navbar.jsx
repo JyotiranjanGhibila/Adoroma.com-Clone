@@ -1,11 +1,19 @@
 
+import { ReactNode } from "react";
+import {Link} from "react-router-dom"
+
 import {
   Box,
   Flex,
   Text,
   HStack,
+
   Link,
   
+
+  
+  IconButton,
+
   Button,
   Menu,
   MenuButton,
@@ -37,6 +45,7 @@ import NavDrawer from "../NavComponents/Drawer";
 import { FcLike } from "react-icons/fc";
 import { FaRegAddressCard } from "react-icons/fa";
 import { BiShoppingBag } from "react-icons/bi";
+import Ads from "../HomeComponents/Ads/Ads";
 
 const Links = ["Dashboard", "Projects", "Team"];
 
@@ -141,6 +150,7 @@ export default function Navbar() {
                 >
                   <p style={{ marginRight: "60px" }}> Hi,Braj</p>
                   <Menu>
+                    <Link to="/login">
                     <MenuButton
                       as={Button}
                       bg="none"
@@ -148,8 +158,11 @@ export default function Navbar() {
                       width={"max-content"}
                       rightIcon={<ChevronDownIcon />}
                     >
+                    
                       My Account
+                    
                     </MenuButton>
+                    </Link>
                     <MenuList textColor="black" padding={"10px"}>
                       <MenuItem>
                         <AiFillGift /> Join VIP Rewards
@@ -215,6 +228,7 @@ export default function Navbar() {
           />
         </InputGroup>
       </Flex>
+      
     </>
   );
 }

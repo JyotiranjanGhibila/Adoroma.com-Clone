@@ -1,7 +1,7 @@
 import { Box, Flex, Grid, GridItem, Image, SimpleGrid, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import { BiChevronDown } from "react-icons/bi";
-import { a, Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 import "./dropdown.css";
 
  const brandsArr = [
@@ -56,6 +56,21 @@ const Dropdown = () => {
                       pl={10}
                       pt={4}
                     >
+
+                      <Box >
+                        <Link to='/photography'>
+                        <Text fontWeight={"semibold"} fontSize={"16px"}>
+                          Camera
+                        </Text>
+                        </Link>
+                        <Text pt={6} pb={6} fontWeight={"semibold"}>
+                          Lenses
+                        </Text>
+                        <Text fontWeight={"semibold"} fontSize={"16px"}>
+                          Tripods and supports
+                        </Text>
+                      </Box>
+
                       <Box>
                         <Stack>
                           <Text fontWeight={"semibold"} fontSize={"16px"}>
@@ -212,6 +227,31 @@ const Dropdown = () => {
                           ))}
                         </SimpleGrid>
                       </Box>
+
+
+                      <Box>
+                       
+                        <Text fontWeight={"semibold"} fontSize={"16px"}>
+                          Gaming
+                        </Text>
+                        <Text fontSize={"14px"} mt={3}>
+                          Gaming Consoles
+                        </Text>
+                        <Text fontSize={"14px"} mt={3}>
+                          Gaming Accessories
+                        </Text>
+                        <Text fontSize={"14px"} mt={3}>
+                          Gaming Titles
+                        </Text>
+                        <Text fontWeight={"semibold"} fontSize={"16px"}>
+                          Projectors
+                        </Text>
+                        <Text fontSize={"14px"} mt={3}>
+                          Streming Devices
+                        </Text>
+                      </Box>
+
+
                       <Box>
                         <Image
                           ml={12}

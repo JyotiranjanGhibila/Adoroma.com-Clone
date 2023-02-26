@@ -1,7 +1,18 @@
 const express = require("express");
 const { ProductModel } = require("../models/Product.model");
+const { UserModel } = require("../models/User.model");
 
 const AdminRouter = express.Router();
+
+AdminRouter.get("/users", async (req, res) => {
+  try {
+    const data = await UserModel.find();
+    res.send(data);
+  } catch (error) {
+    console.log(error);
+    res.status(400).send({ message: "something went wrong", error });
+  }
+});
 
 AdminRouter.post("/create", async (req, res) => {
   const ID = req.params.id;
