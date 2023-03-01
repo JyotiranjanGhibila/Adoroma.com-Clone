@@ -14,8 +14,6 @@ import {
   DrawerContent,
   Text,
   useDisclosure,
-  BoxProps,
-  FlexProps,
   Menu,
   MenuButton,
   MenuDivider,
@@ -25,18 +23,12 @@ import {
 import {
   FiHome,
   FiTrendingUp,
-  FiStar,
   FiSettings,
   FiMenu,
-  FiBell,
   FiChevronDown,
-  FiCompass,
-  FiSearch
+  FiSearch,
 } from "react-icons/fi";
-import { IconType } from "react-icons";
-import { ReactText } from "react";
 import AdminPanel from "./adminpanel";
-
 
 const LinkItems = [
   { name: "Home", icon: FiHome },
@@ -44,12 +36,9 @@ const LinkItems = [
   { name: "Settings", icon: FiSettings },
 ];
 
-export default function SidebarWithHeader({
-  children,
-}) {
+export default function SidebarWithHeader({ children }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
- 
   return (
     <Box minH="100vh" bg={useColorModeValue("#f0f8ff")}>
       <SidebarContent
@@ -71,16 +60,14 @@ export default function SidebarWithHeader({
       </Drawer>
       {/* mobilenav */}
       <MobileNav onOpen={onOpen} />
-      <Box   ml={{ base: 0, md: 60 }} p="4">
-        <AdminPanel/>
+      <Box ml={{ base: 0, md: 60 }} p="4">
+        <AdminPanel />
 
         {children}
       </Box>
     </Box>
   );
 }
-
-
 
 const SidebarContent = ({ onClose, ...rest }) => {
   return (
@@ -95,7 +82,16 @@ const SidebarContent = ({ onClose, ...rest }) => {
       {...rest}
     >
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
-        <h1 style={{   fontFamily: "Montserrat",color:"#004387",fontWeight:"900",fontSize:"30px"}}>ElectroGlad</h1>
+        <h1
+          style={{
+            fontFamily: "Montserrat",
+            color: "#004387",
+            fontWeight: "900",
+            fontSize: "30px",
+          }}
+        >
+          ElectroGlad
+        </h1>
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
       {LinkItems.map((link) => (
@@ -106,7 +102,6 @@ const SidebarContent = ({ onClose, ...rest }) => {
     </Box>
   );
 };
-
 
 const NavItem = ({ icon, children, ...rest }) => {
   return (
@@ -146,7 +141,7 @@ const NavItem = ({ icon, children, ...rest }) => {
 
 const MobileNav = ({ onOpen, ...rest }) => {
   const logout = () => {
-    window.location.href = "/"
+    window.location.href = "/";
   };
 
   return (
