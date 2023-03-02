@@ -19,6 +19,7 @@ const CartSchema = Schema(
           default: 1,
         },
         price: Number,
+        img: String,
       },
     ],
     bill: {
