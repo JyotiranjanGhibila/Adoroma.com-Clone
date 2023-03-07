@@ -165,7 +165,7 @@ export default function Navbar() {
                   display={["none", "block", "block", "block"]}
                   padding="10px"
                 >
-                  <p style={{ marginRight: "60px" }}> Hi,Braj</p>
+                  <p style={{ marginRight: "60px" }}> Hi,User</p>
                   <Menu>
                     <Link to="/login">
                       <MenuButton

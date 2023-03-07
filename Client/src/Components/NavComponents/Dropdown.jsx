@@ -56,12 +56,11 @@ const Dropdown = () => {
                       pl={10}
                       pt={4}
                     >
-
-                      <Box >
-                        <Link to='/photography'>
-                        <Text fontWeight={"semibold"} fontSize={"16px"}>
-                          Camera
-                        </Text>
+                      <Box>
+                        <Link to="/photography">
+                          <Text fontWeight={"semibold"} fontSize={"16px"}>
+                            Camera
+                          </Text>
                         </Link>
                         <Text pt={6} pb={6} fontWeight={"semibold"}>
                           Lenses
@@ -187,7 +186,7 @@ const Dropdown = () => {
                       </Box>
                       <Box>
                         <Image
-                          ml={12}
+                          ml={0}
                           height="380px"
                           src="https://images.unsplash.com/photo-1607462109225-6b64ae2dd3cb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVqaWZpbG0lMjBjYW1lcmF8ZW58MHx8MHx8&w=1000&q=80"
                           alt="image"
@@ -219,8 +218,12 @@ const Dropdown = () => {
                     >
                       <Box>
                         <SimpleGrid columns={[2, 4, 4]} spacing="10px">
-                          {brandsArr.map((el,i) => (
-                            <Box border={"1px solid silver"} width={"150px"} key={i}>
+                          {brandsArr.map((el, i) => (
+                            <Box
+                              border={"1px solid silver"}
+                              width={"150px"}
+                              key={i}
+                            >
                               {" "}
                               <Image src={el} width={"100%"} padding={"10px"} />
                             </Box>
@@ -228,9 +231,7 @@ const Dropdown = () => {
                         </SimpleGrid>
                       </Box>
 
-
                       <Box>
-                       
                         <Text fontWeight={"semibold"} fontSize={"16px"}>
                           Gaming
                         </Text>
@@ -251,10 +252,9 @@ const Dropdown = () => {
                         </Text>
                       </Box>
 
-
                       <Box>
                         <Image
-                          ml={12}
+                          ml={0}
                           height="450px"
                           src="https://images.unsplash.com/photo-1613047503507-b8d01ce6af26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG9ncmFwaHklMjBjYW1lcmF8ZW58MHx8MHx8&w=1000&q=80"
                           alt="image"
@@ -552,10 +552,7 @@ const Dropdown = () => {
                           </Text>
                         </Stack>
                       </Box>
-                    </Box>
-                    <Box>
-                      {" "}
-                      <Stack pt={6} pb={6}>
+                      <Stack pb={6}>
                         <Text fontWeight={"semibold"} fontSize={"16px"}>
                           Light Stands & Mounting
                         </Text>
@@ -572,6 +569,14 @@ const Dropdown = () => {
                           Hardware Umbrella Mounts
                         </Text>
                       </Stack>
+                      <Box>
+                        <Image
+                          ml={0}
+                          height="450px"
+                          src="https://images.unsplash.com/photo-1613047503507-b8d01ce6af26?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvdG9ncmFwaHklMjBjYW1lcmF8ZW58MHx8MHx8&w=1000&q=80"
+                          alt="image"
+                        />
+                      </Box>
                     </Box>
                   </div>
                 </div>
