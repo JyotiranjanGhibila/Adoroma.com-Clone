@@ -9,140 +9,129 @@ import ReactStars2 from "react-stars";
 
 const data = [
   {
-    _id: "63f616b6524b408fb9d9f028",
-    title: "Sony FX3 Full-Frame Cinema Line Camera",
-    img: "https://www.adorama.com/images/product/soilmefx3.jpg",
-    brand: "Canon",
-    rating: 4.8,
-    review: 70,
-    price: 3899.99,
+    _id: "63f6154372140ac3966e62c0",
+    title:
+      "Swellpro SplashDrone 4 Waterproof Drone with Fixed Camera 1080p, Payload Release",
+    img: "https://www.adorama.com/images/product/spcp01005prd.jpg",
+    brand: "DJI",
+    rating: 3.5,
+    review: 0,
+    price: 2136,
     isActive: true,
-    item_tag: "Top Rated Gear",
-    category: "video",
+    item_tag: "Kit Savings",
+    category: "drone",
     inventory: 70,
   },
   {
-    _id: "63f616b6524b408fb9d9f029",
-    title: "RED Digital Cinema KOMODO 6K Camera",
-    img: "https://www.adorama.com/images/product/rd7100333.jpg",
-    brand: "Sony",
-    rating: 4.9,
-    review: 14,
-    price: 5995,
-    isActive: true,
-    item_tag: "Top Rated Gear",
-    category: "video",
-    inventory: 70,
-  },
-  {
-    _id: "63f616b6524b408fb9d9f02a",
-    title: "Blackmagic Design URSA Mini Pro 12K Camera",
-    img: "https://www.adorama.com/images/product/bmcieurupr12.jpg",
-    brand: "BirdDog",
-    rating: 4.4,
-    review: 10,
-    price: 6385,
-    isActive: true,
-    item_tag: "Top Rated Gear",
-    category: "video",
-    inventory: 70,
-  },
-  {
-    _id: "63f616b6524b408fb9d9f02b",
-    title: "Panasonic Lumix BS1H Mirrorless Live & Cinema Camera",
-    img: "https://www.adorama.com/images/product/pcbs1h.jpg",
-    brand: "BirdDog",
-    rating: 3.9,
+    _id: "63f6154372140ac3966e62c2",
+    title: "Parrot ANAFI USA Thermal Drone with Accessories Kit",
+    img: "https://www.adorama.com/images/product/paranafiak.jpg",
+    brand: "CHASING",
+    rating: 5,
     review: 1,
-    price: 2497.99,
+    price: 7852.9,
     isActive: true,
-    item_tag: "$1000 Off",
-    category: "video",
+    item_tag: "Kit Savings",
+    category: "drone",
     inventory: 70,
   },
   {
-    _id: "63f616b6524b408fb9d9f02c",
+    _id: "63f6154372140ac3966e62c3",
+    title: "Parrot ANAFI Ai Drone with Accessories Kit",
+    img: "https://www.adorama.com/images/product/parpf72831ak.jpg",
+    brand: "Autel Robotics",
+    rating: 4.5,
+    review: 1,
+    price: 5412.9,
+    isActive: true,
+    item_tag: "Kit Savings",
+    category: "drone",
+    inventory: 70,
+  },
+  {
+    _id: "63f6154372140ac3966e62c4",
     title:
-      "Canon EOS R5 C Mirrorless Digital Cinema Camera w/RF 24-105mm f/4 L IS USM Lens",
-    img: "https://www.adorama.com/images/product/car5cbk.jpg",
-    brand: "BZB GEAR",
-    rating: 4.3,
-    review: 21,
-    price: 5499,
+      "Swellpro SplashDrone 4 Multi-Functional Waterproof Drone with Payload Release",
+    img: "https://www.adorama.com/images/product/spcp01005e.jpg",
+    brand: "CHASING",
+    rating: 3,
+    review: 0,
+    price: 1718,
     isActive: true,
-    item_tag: "Special",
-    category: "video",
+    item_tag: "Kit Savings",
+    category: "drone",
     inventory: 70,
   },
   {
-    _id: "63f616b6524b408fb9d9f02d",
-    title: "Sony PXW-FX9 XDCAM 6K Full Frame Camera System",
-    img: "https://www.adorama.com/images/product/sopxwfx9.jpg",
-    brand: "Canon",
-    rating: 4.8,
-    review: 6,
-    price: 10999.99,
+    _id: "63f6154372140ac3966e62c5",
+    title:
+      "DJI Mini 3 Pro Drone with RC Controller, Fly More Plus Kit, Essential Acc Kit",
+    img: "https://www.adorama.com/images/product/djim3prorcn.jpg",
+    brand: "DJI",
+    rating: 4.7,
+    review: 42,
+    price: 1178,
     isActive: true,
-    item_tag: "Top Rated Gear",
-    category: "video",
+    item_tag: "Kit Savings",
+    category: "drone",
     inventory: 70,
   },
   {
-    _id: "63f616b6524b408fb9d9f02e",
-    title: "Blackmagic Design Pocket Cinema Camera 6K Pro",
-    img: "https://www.adorama.com/images/product/bmccamp6kpro.jpg",
-    brand: "BirdDog",
-    rating: 4.8,
-    review: 150,
-    price: 2535,
-    isActive: true,
-    item_tag: "Top Rated Gear",
-    category: "video",
-    inventory: 70,
-  },
-  {
-    _id: "63f616b6524b408fb9d9f02f",
-    title: "RED Digital Cinema KOMODO 6K Production Pack",
-    img: "https://www.adorama.com/images/product/rd7100340.jpg",
-    brand: "BirdDog",
+    _id: "63f6154372140ac3966e62c6",
+    title: "DJI Mini 2 Drone Fly More Combo",
+    img: "https://www.adorama.com/images/product/djimvmnc2.jpg",
+    brand: "Autel Robotics",
     rating: 4.9,
-    review: 14,
-    price: 8200,
+    review: 145,
+    price: 599,
     isActive: true,
     item_tag: "Top Rated Gear",
-    category: "video",
+    category: "drone",
     inventory: 70,
   },
   {
-    _id: "63f616b6524b408fb9d9f030",
+    _id: "63f6154372140ac3966e62c7",
     title:
-      "Sony FX3 Full-Frame Cinema Line Camera with DJI RS 3 Pro Combo Gimbal",
-    img: "https://www.adorama.com/images/product/soilmefx3gk.jpg",
-    brand: "Sony",
-    rating: 4.8,
-    review: 70,
-    price: 4849.99,
+      "Swellpro SplashDrone 4 Waterproof Drone with Night-Vision 1080p, Extra Battery",
+    img: "https://www.adorama.com/images/product/spcp01005ebc.jpg",
+    brand: "DJI",
+    rating: 4.7,
+    review: 0,
+    price: 2597,
     isActive: true,
     item_tag: "Kit Savings",
-    category: "video",
+    category: "drone",
     inventory: 70,
   },
   {
-    _id: "63f616b6524b408fb9d9f031",
+    _id: "63f6154372140ac3966e62c8",
     title:
-      "Sony FX3 Full-Frame Cinema Line Camera with FE 24-70mm f/2.8 GM II Lens",
-    img: "https://www.adorama.com/images/product/soilmefx3l1.jpg",
-    brand: "Sony",
-    rating: 4.8,
-    review: 70,
-    price: 6197.99,
+      "DJI Mini 3 Pro Drone with RC Controller, Fly More Plus Kit, Complete Acc. Kit",
+    img: "https://www.adorama.com/images/product/djim3prorco.jpg",
+    brand: "CHASING",
+    rating: 4.3,
+    review: 42,
+    price: 1268,
     isActive: true,
     item_tag: "Kit Savings",
-    category: "video",
+    category: "drone",
+    inventory: 70,
+  },
+  {
+    _id: "63f6154372140ac3966e62c9",
+    title:
+      "DJI Mini 3 Pro Drone with RC Remote Controller with Essential Accessories Kit",
+    img: "https://www.adorama.com/images/product/djim3prorch.jpg",
+    brand: "CHASING",
+    rating: 4.7,
+    review: 42,
+    price: 929,
+    isActive: true,
+    item_tag: "Kit Savings",
+    category: "drone",
     inventory: 70,
   },
 ];
-
 
 const buttonStyle = {
   width: "30px",
@@ -183,7 +172,7 @@ const responsiveSettings = [
   },
 ];
 
-const Camera = () => {
+const Drones = () => {
   function Added() {
     // console.log("ijns");
   }
@@ -199,7 +188,7 @@ const Camera = () => {
     >
       <Flex textAlign={"left"} alignItems="baseline" padding="15px">
         <Heading textAlign={"left"} fontWeight="normal">
-          Camera Accessories
+          Drones Accessories
         </Heading>
         {}
         <span>Special offers</span>
@@ -252,7 +241,10 @@ const Camera = () => {
                 <Flex justifyContent="center" alignContent="center">
                   <Box fontSize="md">
                     <Box as="span" color={"gray.600"} fontSize="sm" margin={1}>
-                      <strike> {`Regular Price: $${Math.floor(el.price * 1.5)}.00`}</strike>
+                      <strike>
+                        {" "}
+                        {`Regular Price: $${Math.floor(el.price * 1.5)}.00`}
+                      </strike>
                     </Box>
                   </Box>
                 </Flex>
@@ -302,4 +294,4 @@ const Camera = () => {
   );
 };
 
-export default Camera;
+export default Drones;
