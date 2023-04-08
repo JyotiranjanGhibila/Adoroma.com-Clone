@@ -1,10 +1,30 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Styles/Login.css";
 import { Link, useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { loginUser, setCart } from "../../redux/auth/authSlice";
+import axios from "axios";
+
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const { user } = useSelector((state) => state.auth);
+
+  useEffect(() => {
+    axios
+      .get("https://taupe-raven-gear.cyclic.app/api/cart", {
+        headers: {
+          Authorization: user?.token,
+        },
+      })
+      .then((res) => {
+        dispatch(setCart(res.data.items));
+      })
+      .catch((err) => console.log(err));
+  }, [user]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -26,7 +46,8 @@ function Login() {
     })
       .then((res) => res.json())
       .then((res) => {
-        console.log(res.token);
+        console.log(res);
+        dispatch(loginUser({ user: res, cart: [] }));
         localStorage.setItem("Token", res.token);
         if (email === "adminglad@gmail.com" && password === "adminglad2023") {
           navigate("/admin"); // Redirect to admin panel

@@ -46,13 +46,14 @@ CartRouter.post("/add-to-cart", async (req, res) => {
 
     const price = item.price;
     const title = item.title;
+    const img = item.img;
 
     const itemIndex = cart.items.findIndex((item) => item.itemId == itemId);
 
     // IF ITEM ALREADY EXISTS INCREASE THE QUANTITY
     if (itemIndex > -1) {
       let product = cart.items[itemIndex];
-      product.quantity = quantity;
+      product.quantity += quantity;
       cart.items[itemIndex] = product;
 
       cart.bill = cart.items.reduce((acc, item) => {
@@ -63,7 +64,7 @@ CartRouter.post("/add-to-cart", async (req, res) => {
       res.send(cart);
     } else {
       // IF ITEM IS NOT IN CART
-      cart.items.push({ itemId, title, price, quantity });
+      cart.items.push({ itemId, title, price, quantity, img });
       cart.bill = cart.items.reduce((acc, item) => {
         return acc + item.price * item.quantity;
       }, 0);

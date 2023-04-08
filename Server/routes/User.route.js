@@ -2,6 +2,7 @@ const express = require("express");
 const bcrypt = require("bcrypt");
 const { UserModel } = require("../models/User.model");
 var jwt = require("jsonwebtoken");
+const { CartModel } = require("../models/Cart.model");
 
 const UserRouter = express.Router();
 
@@ -38,7 +39,7 @@ UserRouter.post("/login", async (req, res) => {
   try {
     const user = await UserModel.find({ email });
     if (user.length > 0) {
-      bcrypt.compare(password, user[0].password, (err, result) => {
+      bcrypt.compare(password, user[0].password, async (err, result) => {
         if (result) {
           // CREATING TOKEN
           const token = jwt.sign({ userID: user[0]._id }, "secret");
