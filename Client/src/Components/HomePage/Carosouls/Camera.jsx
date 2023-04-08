@@ -5,7 +5,7 @@ import "react-slideshow-image/dist/styles.css";
 import { Flex, Circle, Box, Image } from "@chakra-ui/react";
 import { BsStar, BsStarFill, BsStarHalf } from "react-icons/bs";
 import "./style.css";
-import ReactStars from "react-stars";
+import ReactStars2 from "react-stars";
 
 const data = [
   {
@@ -143,6 +143,7 @@ const data = [
   },
 ];
 
+
 const buttonStyle = {
   width: "30px",
   background: "none",
@@ -270,7 +271,7 @@ const Camera = () => {
                   margin={1}
                 >
                   <Box fontSize="md" lineHeight="tight" margin={1}>
-                    <ReactStars count={el.rating} color1={"#ffd700"} />
+                    <ReactStars2 count={el.rating} color1={"#ffd700"} />
                   </Box>
                 </Flex>
                 <Flex justifyContent="center" alignContent="center">
