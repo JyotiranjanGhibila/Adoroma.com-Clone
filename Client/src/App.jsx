@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import AppRoutes from "./routes/AppRoutes";
 import { useLocation } from "react-router";
 
+
 function App() {
   const { pathname } = useLocation();
   return (
@@ -11,6 +12,7 @@ function App() {
       {pathname !== "/admin" && <Navbar />}
       <AppRoutes />
       {pathname !== "/admin" && <Footer />}
+      
     </>
   );
 }
