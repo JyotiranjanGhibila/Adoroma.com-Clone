@@ -51,48 +51,6 @@ const Navbar = () => {
                 _hover={{ textDecoration: "underline" }}
                 display={{ base: "none", md: "block" }}
               >
-<<<<<<< HEAD
-                <BsPerson size={"30px"} />
-                <Box
-                  lineHeight={1}
-                  textAlign="center"
-                  w={"fit-content"}
-                  display={["none", "block", "block", "block"]}
-                  padding="10px"
-                >
-                  <p style={{ marginRight: "60px" }}> Hi,User</p>
-                  <Menu>
-                    <Link to="/login">
-                      <MenuButton
-                        as={Button}
-                        bg="none"
-                        height="fit-content"
-                        width={"max-content"}
-                        rightIcon={<ChevronDownIcon />}
-                      >
-                        My Account
-                      </MenuButton>
-                    </Link>
-                    <MenuList textColor="black" padding={"10px"}>
-                      <MenuItem>
-                        <AiFillGift /> Join VIP Rewards
-                      </MenuItem>
-                      <MenuItem>
-                        <BsPerson /> My Account
-                      </MenuItem>
-                      <MenuItem>
-                        <BiShoppingBag /> My Orders
-                      </MenuItem>
-                      <MenuItem>
-                        <FcLike /> <span>Wishlists</span>
-                      </MenuItem>
-                      <MenuItem>
-                        <FaRegAddressCard /> Address books
-                      </MenuItem>
-                      <a href="">Signout</a>
-                    </MenuList>
-                  </Menu>
-=======
                 <Text fontSize="xs">{user ? user.first_name : "Sign In"}</Text>
                 <Box fontSize="sm" fontWeight="500">
                   {user ? (
@@ -100,7 +58,6 @@ const Navbar = () => {
                   ) : (
                     "My Account"
                   )}
->>>>>>> 9cb7980682bb1cc434c08f3d9d2a4ae42d7a05ab
                 </Box>
               </Box>
             </HStack>

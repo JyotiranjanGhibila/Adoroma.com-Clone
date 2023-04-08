@@ -12,7 +12,7 @@ function App() {
       {pathname !== "/admin" && <Navbar />}
       <AppRoutes />
       {pathname !== "/admin" && <Footer />}
-     
+    
     </>
   );
 }
